@@ -1,10 +1,16 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function MenuBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [eventsOpen, setEventsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const closeDropdowns = () => {
+    setEventsOpen(false);
   };
 
   return (
@@ -13,25 +19,58 @@ export default function MenuBar() {
         <div className="flex justify-between items-center h-14">
           {/* Brand */}
           <div className="flex-shrink-0">
-            <a href="/" className="text-white text-xl md:text-2xl font-semibold tracking-wide">
+            <Link to="/" className="text-white text-xl md:text-2xl font-semibold tracking-wide">
               Sankalana
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6">
+            <div
+              className="relative"
+              onMouseEnter={() => setEventsOpen(true)}
+              onMouseLeave={() => setEventsOpen(false)}
+            >
+              <button
+                onClick={() => setEventsOpen(!eventsOpen)}
+                className="inline-flex items-center gap-1 text-white/90 hover:text-white"
+                aria-haspopup="true"
+                aria-expanded={eventsOpen}
+              >
+                Events
+                <span className={`transition-transform ${eventsOpen ? 'rotate-180' : ''}`}>⌄</span>
+              </button>
+              {eventsOpen && (
+                <div className="absolute right-0 mt-2 w-44 rounded-xl border border-white/10 bg-[#1f1f1f]/95 backdrop-blur shadow-lg shadow-black/30 p-2 space-y-1">
+                  <Link
+                    to="/"
+                    onClick={closeDropdowns}
+                    className="block px-3 py-2 rounded-lg hover:bg-white/10 text-white/90"
+                  >
+                    Sankalana 2026
+                  </Link>
+                  <Link
+                    to="/sankalana-2025"
+                    onClick={closeDropdowns}
+                    className="block px-3 py-2 rounded-lg hover:bg-white/10 text-white/90"
+                  >
+                    Sankalana 2025
+                  </Link>
+                </div>
+              )}
+            </div>
             <a href="#mission" className="text-white/90 hover:text-white">Our Mission</a>
             <a href="#placements" className="text-white/90 hover:text-white">Ad Placements</a>
             <a href="#packages" className="text-white/90 hover:text-white">Packages</a>
-            <a href="#event" className="text-white/90 hover:text-white">Event</a>
+            <a href="#event" className="text-white/90 hover:text-white">Events</a>
             <a href="#sponsor" className="ml-2 inline-flex items-center gap-2 rounded-md bg-amber-600 hover:bg-amber-700 text-white px-3 py-1.5">
               <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/20">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-                  <path d="M11.645 20.91l-.007-.004-.022-.012a15.247 15.247 0 01-.364-.21 25.18 25.18 0 01-4.243-3.054C4.448 15.268 2.25 12.882 2.25 9.75 2.25 7.1 4.3 5.25 6.75 5.25c1.473 0 2.716.633 3.69 1.675a5.252 5.252 0 013.81-1.675c2.45 0 4.5 1.85 4.5 4.5 0 3.132-2.198 5.518-4.759 7.88a25.18 25.18 0 01-4.243 3.054 15.08 15.08 0 01-.364.21l-.022.012-.007.004-.003.002a.75.75 0 01-.704 0l-.003-.002z" />
+                  <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM8 12a4 4 0 100-8 4 4 0 000 8zm6.5 3.5a5 5 0 00-9 0V18a2 2 0 002 2h5a2 2 0 002-2v-2.5z" clipRule="evenodd" />
                 </svg>
               </span>
-              <span>Sponsor</span>
-              <span className="hidden lg:inline text-white/80">Rs. 20,000</span>
+              <span>Admin Login</span>
+              
             </a>
           </div>
 
@@ -53,6 +92,13 @@ export default function MenuBar() {
         {isOpen && (
           <div className="md:hidden pb-3 border-t border-white/10">
             <div className="grid gap-2 pt-2">
+              <div className="rounded-lg border border-white/10 bg-white/5 p-2">
+                <p className="text-white/70 text-sm mb-1">Events</p>
+                <div className="grid gap-1">
+                  <Link to="/" className="text-white/90 hover:text-white">Sankalana 2026</Link>
+                  <Link to="/sankalana-2025" className="text-white/90 hover:text-white">Sankalana 2025</Link>
+                </div>
+              </div>
               <a href="#mission" className="text-white/90 hover:text-white">Our Mission</a>
               <a href="#placements" className="text-white/90 hover:text-white">Ad Placements</a>
               <a href="#packages" className="text-white/90 hover:text-white">Packages</a>
