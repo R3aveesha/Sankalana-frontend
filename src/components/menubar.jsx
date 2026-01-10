@@ -1,17 +1,24 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function MenuBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [eventsOpen, setEventsOpen] = useState(false);
+  const [isEventsOpen, setIsEventsOpen] = useState(false);
+  const eventsRef = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const closeDropdowns = () => {
-    setEventsOpen(false);
-  };
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (isEventsOpen && eventsRef.current && !eventsRef.current.contains(e.target)) {
+        setIsEventsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isEventsOpen]);
 
   return (
     <nav className="sticky top-0 z-50 bg-[#2a2a2a]/70 backdrop-blur border-b border-white/10">
@@ -26,43 +33,37 @@ export default function MenuBar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6">
-            <div
-              className="relative"
-              onMouseEnter={() => setEventsOpen(true)}
-              onMouseLeave={() => setEventsOpen(false)}
-            >
+            <a href="#mission" className="text-white/90 hover:text-white">Our Mission</a>
+            <a href="#placements" className="text-white/90 hover:text-white">Ad Placements</a>
+            <a href="#packages" className="text-white/90 hover:text-white">Packages</a>
+            <div className="relative" ref={eventsRef}>
               <button
-                onClick={() => setEventsOpen(!eventsOpen)}
-                className="inline-flex items-center gap-1 text-white/90 hover:text-white"
-                aria-haspopup="true"
-                aria-expanded={eventsOpen}
+                type="button"
+                className="text-white/90 hover:text-white inline-flex items-center gap-1"
+                onClick={() => setIsEventsOpen((prev) => !prev)}
               >
                 Events
-                <span className={`transition-transform ${eventsOpen ? 'rotate-180' : ''}`}>⌄</span>
+                <span className={`transition-transform ${isEventsOpen ? 'rotate-180' : ''}`}>▾</span>
               </button>
-              {eventsOpen && (
-                <div className="absolute right-0 mt-2 w-44 rounded-xl border border-white/10 bg-[#1f1f1f]/95 backdrop-blur shadow-lg shadow-black/30 p-2 space-y-1">
-                  <Link
-                    to="/"
-                    onClick={closeDropdowns}
-                    className="block px-3 py-2 rounded-lg hover:bg-white/10 text-white/90"
-                  >
-                    Sankalana 2026
-                  </Link>
+              {isEventsOpen && (
+                <div className="absolute right-0 mt-2 w-44 rounded-lg border border-white/10 bg-neutral-900/95 backdrop-blur shadow-xl shadow-black/30">
                   <Link
                     to="/sankalana-2025"
-                    onClick={closeDropdowns}
-                    className="block px-3 py-2 rounded-lg hover:bg-white/10 text-white/90"
+                    className="block px-4 py-2 text-white/90 hover:text-white hover:bg-white/10"
+                    onClick={() => setIsEventsOpen(false)}
                   >
                     Sankalana 2025
+                  </Link>
+                  <Link
+                    to="/sankalana-2024"
+                    className="block px-4 py-2 text-white/90 hover:text-white hover:bg-white/10"
+                    onClick={() => setIsEventsOpen(false)}
+                  >
+                    Sankalana 2024
                   </Link>
                 </div>
               )}
             </div>
-            <a href="#mission" className="text-white/90 hover:text-white">Our Mission</a>
-            <a href="#placements" className="text-white/90 hover:text-white">Ad Placements</a>
-            <a href="#packages" className="text-white/90 hover:text-white">Packages</a>
-            <a href="#event" className="text-white/90 hover:text-white">Events</a>
             <a href="#sponsor" className="ml-2 inline-flex items-center gap-2 rounded-md bg-amber-600 hover:bg-amber-700 text-white px-3 py-1.5">
               <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/20">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -92,17 +93,16 @@ export default function MenuBar() {
         {isOpen && (
           <div className="md:hidden pb-3 border-t border-white/10">
             <div className="grid gap-2 pt-2">
-              <div className="rounded-lg border border-white/10 bg-white/5 p-2">
-                <p className="text-white/70 text-sm mb-1">Events</p>
-                <div className="grid gap-1">
-                  <Link to="/" className="text-white/90 hover:text-white">Sankalana 2026</Link>
-                  <Link to="/sankalana-2025" className="text-white/90 hover:text-white">Sankalana 2025</Link>
-                </div>
-              </div>
               <a href="#mission" className="text-white/90 hover:text-white">Our Mission</a>
               <a href="#placements" className="text-white/90 hover:text-white">Ad Placements</a>
               <a href="#packages" className="text-white/90 hover:text-white">Packages</a>
-              <a href="#event" className="text-white/90 hover:text-white">Event</a>
+              <div className="rounded-lg border border-white/10 bg-white/5">
+                <p className="px-3 pt-2 text-white/70 text-xs uppercase">Events</p>
+                <div className="flex flex-col pb-2">
+                  <Link to="/sankalana-2025" className="px-3 py-1 text-white/90 hover:text-white">Sankalana 2025</Link>
+                  <Link to="/sankalana-2024" className="px-3 py-1 text-white/90 hover:text-white">Sankalana 2024</Link>
+                </div>
+              </div>
               <a href="#sponsor" className="inline-flex items-center gap-2 rounded-md bg-amber-600 hover:bg-amber-700 text-white px-3 py-1.5 w-fit">
                 <span>Sponsor</span>
                 <span className="text-white/80">Rs. 20,000</span>
