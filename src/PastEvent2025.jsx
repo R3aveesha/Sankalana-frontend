@@ -3,22 +3,34 @@ import MenuBar from './components/menubar';
 
 const slides = [
   {
-    image:
-      'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=1600&auto=format&fit=crop',
-    title: 'Standing ovation',
-    caption: 'A packed auditorium celebrated a decade of Sankalana with roaring applause.',
+    image: '/images/events/01.jpeg',
+    title: 'Opening Performance',
+    caption: 'A stunning opening act with contemporary dancers setting the tone for an unforgettable evening.',
   },
   {
-    image:
-      'https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=1600&auto=format&fit=crop',
-    title: 'Strings in sync',
-    caption: 'Guest artists and students blended classical strings with modern rhythm.',
+    image: '/images/events/2.jpeg',
+    title: 'Standing Ovation',
+    caption: 'The entire cast joins on stage as the audience celebrates with a roaring standing ovation.',
   },
   {
-    image:
-      'https://images.unsplash.com/photo-1505666287802-931dc83948e7?q=80&w=1600&auto=format&fit=crop',
-    title: 'Light & sound',
-    caption: 'Immersive lighting and sound design elevated every note for the audience.',
+    image: '/images/events/03.jpeg',
+    title: 'Packed Auditorium',
+    caption: 'Over 1,100 attendees filled the Faculty of Architecture hall in support of student scholarships.',
+  },
+  {
+    image: '/images/events/04.jpeg',
+    title: 'Stage Production',
+    caption: 'Immersive lighting and the iconic Sankalana logo projection created a mesmerizing atmosphere.',
+  },
+  {
+    image: '/images/events/06.jpeg',
+    title: 'Classical Fusion',
+    caption: 'Guest violinist captivates the audience with a blend of classical and contemporary melodies.',
+  },
+  {
+    image: '/images/events/09.jpeg',
+    title: 'Dance Ensemble',
+    caption: 'Graceful dancers in flowing white dresses perform a choreographed piece.',
   },
 ];
 
@@ -181,6 +193,31 @@ function PastEvent2025() {
                 <p className="text-amber-100 font-semibold">{slot.time}</p>
                 <p className="text-lg font-semibold text-white mt-1">{slot.title}</p>
                 <p className="text-white/70 mt-2 leading-relaxed">{slot.detail}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="rounded-2xl bg-white/5 border border-white/10 p-8 backdrop-blur shadow-xl shadow-black/30">
+          <h3 className="text-2xl font-serif font-bold">Event Gallery</h3>
+          <p className="text-white/70 mt-2 mb-6">Captured moments from Sankalana 2025</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { src: '/images/events/05.jpeg', alt: 'Audience member recording the performance' },
+              { src: '/images/events/07.jpeg', alt: 'Dancer performing with traditional elements' },
+              { src: '/images/events/08.jpeg', alt: 'Performance highlights collage' },
+              { src: '/images/events/09.jpeg', alt: 'Dance ensemble in white dresses' },
+              { src: '/images/events/10.jpeg', alt: 'Pianist performing on stage' },
+              { src: '/images/events/06.jpeg', alt: 'Violinist in concert' },
+            ].map((photo, idx) => (
+              <div key={idx} className="relative group overflow-hidden rounded-lg aspect-[4/3] bg-black/30">
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
             ))}
           </div>
