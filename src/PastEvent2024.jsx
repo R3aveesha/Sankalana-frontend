@@ -184,37 +184,91 @@ function PastEvent2024() {
           </div>
         </section>
 
-        <section className="rounded-2xl bg-white/5 border border-white/10 p-8 backdrop-blur shadow-xl shadow-black/30">
-          <div className="space-y-6">
-            <div>
-              <p className="text-amber-200 text-sm font-semibold">Our Partners</p>
-              <h3 className="text-3xl font-serif font-bold">Sponsors who made 2024 possible</h3>
-              <p className="text-white/70 mt-2">These organizations and brands partnered with us to elevate the experience and support student scholarships.</p>
+        <section className="rounded-3xl bg-gradient-to-b from-white/5 to-white/[0.02] border border-white/10 p-8 md:p-12 backdrop-blur-xl shadow-2xl shadow-black/40">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <p className="text-amber-200 text-sm font-semibold tracking-widest uppercase">Our Partners</p>
+              <h3 className="text-4xl md:text-5xl font-serif font-bold mt-3 mb-4">Sponsors & Partners</h3>
+              <p className="text-white/70 max-w-2xl mx-auto text-lg">Our valued partners at every tier made Sankalana 2024 possible through their vision, support, and generosity.</p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[
-                { src: '/images/events/sponsers2024/sp1.jpeg', alt: 'Partner 1' },
-                { src: '/images/events/sponsers2024/sp2.jpeg', alt: 'Partner 2' },
-                { src: '/images/events/sponsers2024/sp3.jpeg', alt: 'Partner 3' },
-                { src: '/images/events/sponsers2024/sp4.jpeg', alt: 'Partner 4' },
-                { src: '/images/events/sponsers2024/sp5.jpeg', alt: 'Partner 5' },
-                { src: '/images/events/sponsers2024/sp6.jpeg', alt: 'Partner 6' },
-                { src: '/images/events/sponsers2024/sp7.jpeg', alt: 'Partner 7' },
-                { src: '/images/events/sponsers2024/sp10.jpeg', alt: 'Partner 8' },
-                
-              ].map((sponsor, idx) => (
-                <div key={idx} className="group relative overflow-hidden rounded-xl bg-black/40 border border-white/10 aspect-square flex items-center justify-center p-4 hover:border-amber-200/50 transition-all duration-300">
-                  <img
-                    src={sponsor.src}
-                    alt={sponsor.alt}
-                    className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110 filter grayscale group-hover:grayscale-0"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                </div>
-              ))}
+
+            {/* Platinum Tier */}
+            <div className="mb-14">
+              <div className="flex items-center justify-center gap-3 mb-8">
+                <div className="h-px w-12 bg-gradient-to-r from-transparent to-cyan-400" />
+                <div className="h-2 w-2 rounded-full bg-cyan-400 shadow-lg shadow-cyan-400/50" />
+                <h4 className="text-2xl font-semibold text-cyan-300 font-serif">Platinum Partner</h4>
+                <div className="h-2 w-2 rounded-full bg-cyan-400 shadow-lg shadow-cyan-400/50" />
+                <div className="h-px w-12 bg-gradient-to-l from-transparent to-cyan-400" />
+              </div>
+              <div className="grid grid-cols-1 gap-6">
+                {[{ src: '/images/events/sponsers2024/platinum.jpeg', alt: 'Platinum Partner' }].map((sponsor, idx) => (
+                  <div key={idx} className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-cyan-500/15 via-cyan-500/5 to-transparent border-2 border-cyan-400/40 p-12 flex items-center justify-center min-h-96 hover:border-cyan-300/80 transition-all duration-500 shadow-2xl shadow-cyan-500/15 hover:shadow-cyan-500/30">
+                    <img src={sponsor.src} alt={sponsor.alt} className="w-full h-full object-contain max-h-96 transition-all duration-500 group-hover:scale-110" loading="lazy" />
+                  </div>
+                ))}
+              </div>
             </div>
-            <p className="text-sm text-white/60 text-center">Each partner played a unique role in making Sankalana 2024 a success.</p>
+
+            {/* Gold Tier */}
+            <div className="mb-14">
+              <div className="flex items-center justify-center gap-3 mb-8">
+                <div className="h-px w-12 bg-gradient-to-r from-transparent to-yellow-400" />
+                <div className="h-2 w-2 rounded-full bg-yellow-400 shadow-lg shadow-yellow-400/50" />
+                <h4 className="text-2xl font-semibold text-yellow-300 font-serif">Gold Partners</h4>
+                <div className="h-2 w-2 rounded-full bg-yellow-400 shadow-lg shadow-yellow-400/50" />
+                <div className="h-px w-12 bg-gradient-to-l from-transparent to-yellow-400" />
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {[{ src: '/images/events/sponsers2024/gold1.jpeg', alt: 'Gold Partner' }].map((sponsor, idx) => (
+                  <div key={idx} className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-500/15 via-yellow-500/5 to-transparent border border-yellow-400/40 p-6 flex items-center justify-center min-h-40 hover:border-yellow-300/80 transition-all duration-500 shadow-lg shadow-yellow-500/10 hover:shadow-yellow-500/20">
+                    <img src={sponsor.src} alt={sponsor.alt} className="w-full h-full object-contain max-h-40 transition-all duration-500 group-hover:scale-105" loading="lazy" />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Silver Tier */}
+            <div className="mb-14">
+              <div className="flex items-center justify-center gap-3 mb-8">
+                <div className="h-px w-12 bg-gradient-to-r from-transparent to-slate-400" />
+                <div className="h-2 w-2 rounded-full bg-slate-400 shadow-lg shadow-slate-400/50" />
+                <h4 className="text-2xl font-semibold text-slate-300 font-serif">Silver Partners</h4>
+                <div className="h-2 w-2 rounded-full bg-slate-400 shadow-lg shadow-slate-400/50" />
+                <div className="h-px w-12 bg-gradient-to-l from-transparent to-slate-400" />
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                {[
+                  { src: '/images/events/sponsers2024/silver1.jpeg', alt: 'Silver Partner 1' },
+                  { src: '/images/events/sponsers2024/silver2.jpeg', alt: 'Silver Partner 2' },
+                  { src: '/images/events/sponsers2024/silver3.jpeg', alt: 'Silver Partner 3' },
+                ].map((sponsor, idx) => (
+                  <div key={idx} className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-500/15 via-slate-500/5 to-transparent border border-slate-400/40 p-5 flex items-center justify-center aspect-square hover:border-slate-300/80 transition-all duration-500 shadow-md shadow-slate-500/10 hover:shadow-slate-500/20">
+                    <img src={sponsor.src} alt={sponsor.alt} className="w-full h-full object-contain transition-all duration-500 group-hover:scale-105" loading="lazy" />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Bronze Tier */}
+            <div className="mb-8">
+              <div className="flex items-center justify-center gap-3 mb-8">
+                <div className="h-px w-12 bg-gradient-to-r from-transparent to-orange-400" />
+                <div className="h-2 w-2 rounded-full bg-orange-400 shadow-lg shadow-orange-400/50" />
+                <h4 className="text-2xl font-semibold text-orange-300 font-serif">Bronze Partners</h4>
+                <div className="h-2 w-2 rounded-full bg-orange-400 shadow-lg shadow-orange-400/50" />
+                <div className="h-px w-12 bg-gradient-to-l from-transparent to-orange-400" />
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                {[
+                  { src: '/images/events/sponsers2024/bronze2.jpeg', alt: 'Bronze Partner 2' }
+                ].map((sponsor, idx) => (
+                  <div key={idx} className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-orange-500/15 via-orange-500/5 to-transparent border border-orange-400/40 p-4 flex items-center justify-center aspect-square hover:border-orange-300/80 transition-all duration-500 shadow-sm shadow-orange-500/10 hover:shadow-orange-500/20">
+                    <img src={sponsor.src} alt={sponsor.alt} className="w-full h-full object-contain transition-all duration-500 group-hover:scale-105" loading="lazy" />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
