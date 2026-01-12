@@ -219,6 +219,39 @@ function PastEvent2025() {
           </div>
         </section>
 
+        <section className="rounded-2xl bg-white/5 border border-white/10 p-8 backdrop-blur shadow-xl shadow-black/30">
+          <div className="space-y-6">
+            <div>
+              <p className="text-amber-200 text-sm font-semibold">Our Partners</p>
+              <h3 className="text-3xl font-serif font-bold">Sponsors who made 2025 possible</h3>
+              <p className="text-white/70 mt-2">These organizations and brands partnered with us to elevate the experience and support student scholarships.</p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { src: '/images/events/sponsers 2025/WhatsApp Image 2026-01-12 at 14.11.02 (1).jpeg', alt: 'Partner 1' },
+                { src: '/images/events/sponsers 2025/WhatsApp Image 2026-01-12 at 14.11.02 (2).jpeg', alt: 'Partner 2' },
+                { src: '/images/events/sponsers 2025/WhatsApp Image 2026-01-12 at 14.11.02 (3).jpeg', alt: 'Partner 3' },
+                { src: '/images/events/sponsers 2025/WhatsApp Image 2026-01-12 at 14.11.02 (4).jpeg', alt: 'Partner 4' },
+                { src: '/images/events/sponsers 2025/WhatsApp Image 2026-01-12 at 14.11.02.jpeg', alt: 'Partner 5' },
+                { src: '/images/events/sponsers 2025/WhatsApp Image 2026-01-12 at 14.11.03 (1).jpeg', alt: 'Partner 6' },
+                { src: '/images/events/sponsers 2025/WhatsApp Image 2026-01-12 at 14.11.03 (2).jpeg', alt: 'Partner 7' },
+                { src: '/images/events/sponsers 2025/WhatsApp Image 2026-01-12 at 14.11.03.jpeg', alt: 'Partner 8' },
+              ].map((sponsor, idx) => (
+                <div key={idx} className="group relative overflow-hidden rounded-xl bg-black/40 border border-white/10 aspect-square flex items-center justify-center p-4 hover:border-amber-200/50 transition-all duration-300">
+                  <img
+                    src={sponsor.src}
+                    alt={sponsor.alt}
+                    className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110 filter grayscale group-hover:grayscale-0"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-white/60 text-center">Each partner played a unique role in making Sankalana 2025 a success.</p>
+          </div>
+        </section>
+
         <section className="rounded-2xl border border-amber-200/50 bg-amber-50/5 p-8 backdrop-blur shadow-xl shadow-amber-500/10">
           <div className="grid md:grid-cols-[1.2fr_0.8fr] gap-6 items-center">
             <div>
