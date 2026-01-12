@@ -1,7 +1,30 @@
+import { useState, useEffect } from 'react';
 import MenuBar from './components/menubar';
 import Story from './Story';
 
 function Homepage() {
+  const [sponsorships, setSponsorships] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchSponsorships = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/api/sponsorships');
+        const data = await response.json();
+        setSponsorships(data.filter(s => s.active));
+      } catch (error) {
+        console.error('Error fetching sponsorships:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchSponsorships();
+  }, []);
+
+  const premiumSponsors = sponsorships.filter(s => s.sponsorType === 'premium');
+  const goldSponsors = sponsorships.filter(s => s.sponsorType === 'gold');
+  const silverSponsors = sponsorships.filter(s => s.sponsorType === 'silver');
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 text-white">
       <MenuBar />
@@ -100,7 +123,25 @@ function Homepage() {
                   <span className="font-semibold text-amber-100">Rs. 20,000</span>
                 </div>
                 <div className="pb-4 md:pb-5 grid place-items-center px-4 md:px-10">
-                  <p className="text-center text-white/90 text-sm md:text-base">Your Brand Logo &amp; Message Here</p>
+                  {loading ? (
+                    <p className="text-center text-white/70 text-sm">Loading...</p>
+                  ) : premiumSponsors.length > 0 ? (
+                    <div className="text-center space-y-3">
+                      {premiumSponsors[0].imageUrl && (
+                        <img 
+                          src={`http://localhost:5000${premiumSponsors[0].imageUrl}`} 
+                          alt={premiumSponsors[0].sponsorName}
+                          className="max-h-20 mx-auto object-contain"
+                        />
+                      )}
+                      <p className="text-white/90 font-semibold">{premiumSponsors[0].sponsorName}</p>
+                      {premiumSponsors[0].description && (
+                        <p className="text-white/70 text-sm max-w-xl mx-auto">{premiumSponsors[0].description}</p>
+                      )}
+                    </div>
+                  ) : (
+                    <p className="text-center text-white/90 text-sm md:text-base">Your Brand Logo &amp; Message Here</p>
+                  )}
                 </div>
               </div>
             </div>
@@ -109,26 +150,43 @@ function Homepage() {
           {/* Sub slots */}
           <div className="bg-neutral-950/95 border-t border-white/5">
             <div className="max-w-7xl mx-auto px-4 py-8 grid lg:grid-cols-3 gap-6">
-              {[
-                { label: 'SUB SLOT A • Rs. 15,000', badge: 'Limited' },
-                { label: 'SUB SLOT B • Rs. 15,000', badge: 'Featured' },
-                { label: 'SUB SLOT C • Rs. 15,000', badge: 'Popular' },
-              ].map((slot, idx) => (
-                <div
-                  key={idx}
-                  className="rounded-2xl bg-white/5 border-2 border-dashed border-amber-200/70 p-5 shadow-xl shadow-black/20 backdrop-blur"
-                >
-                  <div className="flex items-center justify-between text-xs md:text-sm text-white/85 mb-3">
-                    <span>{slot.label}</span>
-                    <span className="px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-100 border border-amber-200/50">
-                      {slot.badge}
-                    </span>
+              {loading ? (
+                <div className="col-span-3 text-center text-white/70">Loading sponsors...</div>
+              ) : (
+                [
+                  { label: 'SUB SLOT A • Rs. 15,000', badge: 'Limited', sponsor: goldSponsors[0] },
+                  { label: 'SUB SLOT B • Rs. 15,000', badge: 'Featured', sponsor: goldSponsors[1] },
+                  { label: 'SUB SLOT C • Rs. 15,000', badge: 'Popular', sponsor: goldSponsors[2] },
+                ].map((slot, idx) => (
+                  <div
+                    key={idx}
+                    className="rounded-2xl bg-white/5 border-2 border-dashed border-amber-200/70 p-5 shadow-xl shadow-black/20 backdrop-blur"
+                  >
+                    <div className="flex items-center justify-between text-xs md:text-sm text-white/85 mb-3">
+                      <span>{slot.label}</span>
+                      <span className="px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-100 border border-amber-200/50">
+                        {slot.badge}
+                      </span>
+                    </div>
+                    <div className="rounded-xl bg-white/5 border border-white/10 p-6 grid place-items-center text-white/80 text-sm min-h-[120px]">
+                      {slot.sponsor ? (
+                        <div className="text-center space-y-2">
+                          {slot.sponsor.imageUrl && (
+                            <img 
+                              src={`http://localhost:5000${slot.sponsor.imageUrl}`} 
+                              alt={slot.sponsor.sponsorName}
+                              className="max-h-16 mx-auto object-contain"
+                            />
+                          )}
+                          <p className="text-white/90 font-medium">{slot.sponsor.sponsorName}</p>
+                        </div>
+                      ) : (
+                        <p>Partner Logo</p>
+                      )}
+                    </div>
                   </div>
-                  <div className="rounded-xl bg-white/5 border border-white/10 p-6 grid place-items-center text-white/80 text-sm">
-                    Partner Logo
-                  </div>
-                </div>
-              ))}
+                ))
+              )}
             </div>
           </div>
         </section>
