@@ -27,11 +27,7 @@ const slides = [
     title: 'Classical Fusion',
     caption: 'Guest violinist captivates the audience with a blend of classical and contemporary melodies.',
   },
-  {
-    image: '/images/events/09.jpeg',
-    title: 'Dance Ensemble',
-    caption: 'Graceful dancers in flowing white dresses perform a choreographed piece.',
-  },
+
 ];
 
 function PastEvent2025() {
@@ -206,9 +202,9 @@ function PastEvent2025() {
               { src: '/images/events/05.jpeg', alt: 'Audience member recording the performance' },
               { src: '/images/events/07.jpeg', alt: 'Dancer performing with traditional elements' },
               { src: '/images/events/08.jpeg', alt: 'Performance highlights collage' },
-              { src: '/images/events/09.jpeg', alt: 'Dance ensemble in white dresses' },
               { src: '/images/events/10.jpeg', alt: 'Pianist performing on stage' },
               { src: '/images/events/06.jpeg', alt: 'Violinist in concert' },
+              { src: '/images/events/12.jpeg', alt: 'Banners view' },
             ].map((photo, idx) => (
               <div key={idx} className="relative group overflow-hidden rounded-lg aspect-[4/3] bg-black/30">
                 <img
