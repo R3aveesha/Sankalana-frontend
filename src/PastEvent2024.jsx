@@ -3,28 +3,41 @@ import MenuBar from './components/menubar';
 
 const slides = [
   {
-    image: '/images/events/01.jpeg',
-    title: 'Opening Performance',
-    caption: 'Contemporary dancers set the stage for an evening of culture and giving.',
+    image: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.03.jpeg',
+    title: 'Sankalana 2024',
+    caption: 'Memorable moments from our charity musical evening.',
   },
   {
-    image: '/images/events/2.jpeg',
-    title: 'Full Ensemble',
-    caption: 'The entire cast joins together for the grand finale celebration.',
+    image: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.04 (1).jpeg',
+    title: 'Event Highlights',
+    caption: 'Supporting students through the power of music and community.',
   },
   {
-    image: '/images/events/03.jpeg',
-    title: 'Packed Auditorium',
-    caption: 'Hundreds of supporters came together to raise funds for student scholarships.',
-  },
-  {
-    image: '/images/events/04.jpeg',
-    title: 'Stage Production',
-  },
-  {
-    image: '/images/events/08.jpeg',
+    image: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.04.jpeg',
     title: 'Performance Moments',
+    caption: 'An evening dedicated to making education accessible.',
   },
+  {
+    image: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.13 (1).jpeg',
+    title: 'Community Together',
+  },
+  {
+    image: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.13.jpeg',
+    title: 'Sankalana Spirit',
+  },
+  {
+    image: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.14.jpeg',
+    title: 'Event Success',
+  },
+  {
+    image: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.15.jpeg',
+    title: 'Memorable Evening',
+  },
+  {
+    image: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.07.23.jpeg',
+    title: 'Special Moments',
+  },
+
 ];
 
 function PastEvent2024() {
@@ -164,12 +177,18 @@ function PastEvent2024() {
           <p className="text-white/70 mt-2 mb-6">Highlights from Sankalana 2024</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { src: '/images/events/01.jpeg', alt: 'Opening performance with dancers' },
-              { src: '/images/events/2.jpeg', alt: 'Full cast on stage' },
-              { src: '/images/events/03.jpeg', alt: 'Packed auditorium' },
-              { src: '/images/events/04.jpeg', alt: 'Sankalana stage production' },
-              { src: '/images/events/08.jpeg', alt: 'Performance moments' },
-              { src: '/images/events/06.jpeg', alt: 'Musical performance' },
+              { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.03.jpeg', alt: 'Sankalana 2024 event moment' },
+              { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.04 (1).jpeg', alt: 'Sankalana 2024 event moment' },
+              { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.04.jpeg', alt: 'Sankalana 2024 event moment' },
+              { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.05.jpeg', alt: 'Sankalana 2024 event moment' },
+              { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.12.jpeg', alt: 'Sankalana 2024 event moment' },
+              { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.13 (1).jpeg', alt: 'Sankalana 2024 event moment' },
+              { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.13 (2).jpeg', alt: 'Sankalana 2024 event moment' },
+              { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.13.jpeg', alt: 'Sankalana 2024 event moment' },
+              { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.14.jpeg', alt: 'Sankalana 2024 event moment' },
+              { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.15.jpeg', alt: 'Sankalana 2024 event moment' },
+              { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.07.23.jpeg', alt: 'Sankalana 2024 event moment' },
+              { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.07.24.jpeg', alt: 'Sankalana 2024 event moment' },
             ].map((photo, idx) => (
               <div key={idx} className="relative group overflow-hidden rounded-lg aspect-[4/3] bg-black/30">
                 <img

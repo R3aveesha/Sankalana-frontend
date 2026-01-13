@@ -83,10 +83,10 @@ function Homepage() {
                     <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/10">🗓️</span>
                     <span>Coming Soon 2026</span>
                   </div>
-                  <div className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-3 py-1.5">
+                  <a href="https://www.google.com/maps/place/University+of+Moratuwa/data=!4m2!3m1!1s0x0:0x7bd32721ab02560e?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-3 py-1.5 hover:bg-white/20 transition">
                     <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/10">📍</span>
                     <span>University of Moratuwa, Sri Lanka</span>
-                  </div>
+                  </a>
                   <div className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-3 py-1.5">
                     <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/10">🎵</span>
                     <span>A Musical Evening for Hope</span>
