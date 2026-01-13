@@ -64,15 +64,14 @@ export default function MenuBar() {
                 </div>
               )}
             </div>
-            <a href="#sponsor" className="ml-2 inline-flex items-center gap-2 rounded-md bg-amber-600 hover:bg-amber-700 text-white px-3 py-1.5">
+            <Link to="/admin-login" className="ml-2 inline-flex items-center gap-2 rounded-md bg-amber-600 hover:bg-amber-700 text-white px-3 py-1.5 transition">
               <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/20">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
                   <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM8 12a4 4 0 100-8 4 4 0 000 8zm6.5 3.5a5 5 0 00-9 0V18a2 2 0 002 2h5a2 2 0 002-2v-2.5z" clipRule="evenodd" />
                 </svg>
               </span>
               <span>Admin Login</span>
-              
-            </a>
+            </Link>
           </div>
 
           {/* Hamburger */}

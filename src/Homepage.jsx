@@ -204,8 +204,181 @@ function Homepage() {
           <p className="text-white/80">Choose from homepage slots, partner placements, and event-day promotions.</p>
         </section>
         <section id="packages" className="max-w-7xl mx-auto px-4 py-16">
-          <h2 className="text-2xl font-semibold mb-4">Packages</h2>
-          <p className="text-white/80">Explore sponsorship packages tailored for brands of all sizes.</p>
+          <div className="mb-12">
+            <p className="text-amber-200 text-sm font-semibold tracking-widest uppercase mb-2">Sponsorship Tiers</p>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">Choose Your Partnership Level</h2>
+            <p className="text-white/80 max-w-3xl text-lg">Select the sponsorship tier that best fits your organization's vision and budget. Each level provides distinct visibility and engagement opportunities.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Platinum Package */}
+            <div className="group relative rounded-3xl overflow-hidden bg-gradient-to-br from-cyan-500/20 via-cyan-500/10 to-transparent border-2 border-cyan-400/50 shadow-2xl shadow-cyan-500/20 transition-all duration-500 hover:shadow-cyan-500/40 hover:border-cyan-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/0 to-cyan-600/0 group-hover:from-cyan-600/5 group-hover:to-cyan-600/5 transition-all duration-500" />
+              <div className="relative p-8 h-full flex flex-col">
+                <div className="mb-6">
+                  <div className="h-24 w-24 rounded-2xl bg-gradient-to-br from-cyan-500/30 to-cyan-600/20 border border-cyan-400/50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
+                    <span className="text-4xl">💎</span>
+                  </div>
+                  <h3 className="text-2xl font-serif font-bold text-cyan-300 mb-1">Platinum Partner</h3>
+                  <p className="text-cyan-200/80 text-sm">Premium visibility & exclusive benefits</p>
+                </div>
+
+                <div className="mb-6 pb-6 border-b border-cyan-400/20">
+                  <p className="text-white/70 text-sm mb-2">Investment</p>
+                  <p className="text-4xl font-bold text-cyan-300">Rs. 175,000</p>
+                </div>
+
+                <div className="space-y-3 mb-8 flex-grow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-cyan-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Homepage hero placement with brand story</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-cyan-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Event day main stage recognition</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-cyan-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Exclusive social media features</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-cyan-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Custom branded booth space</span>
+                  </div>
+                </div>
+
+                <a href="#sponsor" className="w-full px-4 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white font-semibold transition-all duration-300 text-center">
+                  Get Started
+                </a>
+              </div>
+            </div>
+
+            {/* Gold Package */}
+            <div className="group relative rounded-3xl overflow-hidden bg-gradient-to-br from-yellow-500/20 via-yellow-500/10 to-transparent border-2 border-yellow-400/50 shadow-2xl shadow-yellow-500/20 transition-all duration-500 hover:shadow-yellow-500/40 hover:border-yellow-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/0 to-yellow-600/0 group-hover:from-yellow-600/5 group-hover:to-yellow-600/5 transition-all duration-500" />
+              <div className="relative p-8 h-full flex flex-col">
+                <div className="mb-6">
+                  <div className="h-24 w-24 rounded-2xl bg-gradient-to-br from-yellow-500/30 to-yellow-600/20 border border-yellow-400/50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
+                    <span className="text-4xl">🏆</span>
+                  </div>
+                  <h3 className="text-2xl font-serif font-bold text-yellow-300 mb-1">Gold Partner</h3>
+                  <p className="text-yellow-200/80 text-sm">Strong brand presence & impact</p>
+                </div>
+
+                <div className="mb-6 pb-6 border-b border-yellow-400/20">
+                  <p className="text-white/70 text-sm mb-2">Investment</p>
+                  <p className="text-4xl font-bold text-yellow-300">Rs. 125,000</p>
+                </div>
+
+                <div className="space-y-3 mb-8 flex-grow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-yellow-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Prime homepage sub-slot placement</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-yellow-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Event program featured listing</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-yellow-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Social media brand mentions</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-yellow-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Pre & post-event marketing</span>
+                  </div>
+                </div>
+
+                <a href="#sponsor" className="w-full px-4 py-3 rounded-lg bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-semibold transition-all duration-300 text-center">
+                  Get Started
+                </a>
+              </div>
+            </div>
+
+            {/* Silver Package */}
+            <div className="group relative rounded-3xl overflow-hidden bg-gradient-to-br from-slate-500/20 via-slate-500/10 to-transparent border-2 border-slate-400/50 shadow-2xl shadow-slate-500/20 transition-all duration-500 hover:shadow-slate-500/40 hover:border-slate-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-600/0 to-slate-600/0 group-hover:from-slate-600/5 group-hover:to-slate-600/5 transition-all duration-500" />
+              <div className="relative p-8 h-full flex flex-col">
+                <div className="mb-6">
+                  <div className="h-24 w-24 rounded-2xl bg-gradient-to-br from-slate-500/30 to-slate-600/20 border border-slate-400/50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
+                    <span className="text-4xl">⭐</span>
+                  </div>
+                  <h3 className="text-2xl font-serif font-bold text-slate-300 mb-1">Silver Partner</h3>
+                  <p className="text-slate-200/80 text-sm">Meaningful brand visibility & support</p>
+                </div>
+
+                <div className="mb-6 pb-6 border-b border-slate-400/20">
+                  <p className="text-white/70 text-sm mb-2">Investment</p>
+                  <p className="text-4xl font-bold text-slate-300">Rs. 75,000</p>
+                </div>
+
+                <div className="space-y-3 mb-8 flex-grow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-slate-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Homepage secondary placement</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-slate-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Event day recognition</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-slate-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Partner logo on marketing materials</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-slate-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Event attendance passes (2)</span>
+                  </div>
+                </div>
+
+                <a href="#sponsor" className="w-full px-4 py-3 rounded-lg bg-gradient-to-r from-slate-500 to-slate-600 hover:from-slate-600 hover:to-slate-700 text-white font-semibold transition-all duration-300 text-center">
+                  Get Started
+                </a>
+              </div>
+            </div>
+
+            {/* Bronze Package */}
+            <div className="group relative rounded-3xl overflow-hidden bg-gradient-to-br from-orange-500/20 via-orange-500/10 to-transparent border-2 border-orange-400/50 shadow-2xl shadow-orange-500/20 transition-all duration-500 hover:shadow-orange-500/40 hover:border-orange-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-600/0 to-orange-600/0 group-hover:from-orange-600/5 group-hover:to-orange-600/5 transition-all duration-500" />
+              <div className="relative p-8 h-full flex flex-col">
+                <div className="mb-6">
+                  <div className="h-24 w-24 rounded-2xl bg-gradient-to-br from-orange-500/30 to-orange-600/20 border border-orange-400/50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
+                    <span className="text-4xl">🎯</span>
+                  </div>
+                  <h3 className="text-2xl font-serif font-bold text-orange-300 mb-1">Bronze Partner</h3>
+                  <p className="text-orange-200/80 text-sm">Community support & visibility</p>
+                </div>
+
+                <div className="mb-6 pb-6 border-b border-orange-400/20">
+                  <p className="text-white/70 text-sm mb-2">Investment</p>
+                  <p className="text-4xl font-bold text-orange-300">Rs. 50,000</p>
+                </div>
+
+                <div className="space-y-3 mb-8 flex-grow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-orange-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Partner recognition on website</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-orange-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Event day announcements</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-orange-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Social media shout-outs</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-orange-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/80 text-sm">Event attendance passes (1)</span>
+                  </div>
+                </div>
+
+                <a href="#sponsor" className="w-full px-4 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold transition-all duration-300 text-center">
+                  Get Started
+                </a>
+              </div>
+            </div>
+          </div>
         </section>
         <section id="event" className="max-w-7xl mx-auto px-4 py-16">
           <h2 className="text-2xl font-semibold mb-4">Event</h2>
