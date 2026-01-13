@@ -120,7 +120,6 @@ function Homepage() {
                     <span className="hidden md:inline text-white/50">•</span>
                     <span className="text-amber-100/90">Premium Partner</span>
                   </div>
-                  <span className="font-semibold text-amber-100">Rs. 20,000</span>
                 </div>
                 <div className="pb-4 md:pb-5 grid place-items-center px-4 md:px-10">
                   {loading ? (
@@ -154,9 +153,9 @@ function Homepage() {
                 <div className="col-span-3 text-center text-white/70">Loading sponsors...</div>
               ) : (
                 [
-                  { label: 'SUB SLOT A • Rs. 15,000', badge: 'Limited', sponsor: goldSponsors[0] },
-                  { label: 'SUB SLOT B • Rs. 15,000', badge: 'Featured', sponsor: goldSponsors[1] },
-                  { label: 'SUB SLOT C • Rs. 15,000', badge: 'Popular', sponsor: goldSponsors[2] },
+                  { label: 'SUB SLOT A', badge: 'Limited', sponsor: goldSponsors[0] },
+                  { label: 'SUB SLOT B', badge: 'Featured', sponsor: goldSponsors[1] },
+                  { label: 'SUB SLOT C', badge: 'Popular', sponsor: goldSponsors[2] },
                 ].map((slot, idx) => (
                   <div
                     key={idx}
