@@ -33,9 +33,9 @@ export default function MenuBar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6">
-            <a href="#mission" className="text-white/90 hover:text-white">Our Mission</a>
-            <a href="#placements" className="text-white/90 hover:text-white">Ad Placements</a>
-            <a href="#packages" className="text-white/90 hover:text-white">Packages</a>
+            <a href="/#mission" className="text-white/90 hover:text-white">Our Mission</a>
+            <a href="/#placements" className="text-white/90 hover:text-white">Ad Placements</a>
+            <a href="/#packages" className="text-white/90 hover:text-white">Packages</a>
             <div className="relative" ref={eventsRef}>
               <button
                 type="button"
@@ -84,9 +84,9 @@ export default function MenuBar() {
         {isOpen && (
           <div className="md:hidden pb-3 border-t border-white/10">
             <div className="grid gap-2 pt-2">
-              <a href="#mission" className="text-white/90 hover:text-white">Our Mission</a>
-              <a href="#placements" className="text-white/90 hover:text-white">Ad Placements</a>
-              <a href="#packages" className="text-white/90 hover:text-white">Packages</a>
+              <a href="/#mission" className="text-white/90 hover:text-white" onClick={() => setIsOpen(false)}>Our Mission</a>
+              <a href="/#placements" className="text-white/90 hover:text-white" onClick={() => setIsOpen(false)}>Ad Placements</a>
+              <a href="/#packages" className="text-white/90 hover:text-white" onClick={() => setIsOpen(false)}>Packages</a>
               <div className="rounded-lg border border-white/10 bg-white/5">
                 <p className="px-3 pt-2 text-white/70 text-xs uppercase">Events</p>
                 <div className="flex flex-col pb-2">

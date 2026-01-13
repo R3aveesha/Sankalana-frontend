@@ -26,10 +26,9 @@ function AdminLogin() {
       const data = await response.json();
 
       if (response.ok) {
-        // Store token in localStorage
+        // Store token in localStorage and redirect to homepage (or your admin page if available)
         localStorage.setItem('adminToken', data.token);
-        // Redirect to admin dashboard
-        navigate('/admin-dashboard');
+        navigate('/', { replace: true });
       } else {
         setError(data.message || 'Login failed. Please try again.');
       }
