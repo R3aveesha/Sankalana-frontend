@@ -26,9 +26,9 @@ function AdminLogin() {
       const data = await response.json();
 
       if (response.ok) {
-        // Store token in localStorage and redirect to homepage (or your admin page if available)
+        // Store token in localStorage and redirect to admin sponsors form
         localStorage.setItem('adminToken', data.token);
-        navigate('/', { replace: true });
+        navigate('/admin/sponsors', { replace: true });
       } else {
         setError(data.message || 'Login failed. Please try again.');
       }
