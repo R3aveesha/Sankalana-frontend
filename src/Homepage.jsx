@@ -130,7 +130,7 @@ function Homepage() {
                         <img 
                           src={`http://localhost:5000${premiumSponsors[0].imageUrl}`} 
                           alt={premiumSponsors[0].sponsorName}
-                          className="max-h-20 mx-auto object-contain"
+                          className="max-h-96 mx-auto object-contain"
                         />
                       )}
                       <p className="text-white/90 font-semibold">{premiumSponsors[0].sponsorName}</p>
@@ -167,14 +167,14 @@ function Homepage() {
                         {slot.badge}
                       </span>
                     </div>
-                    <div className="rounded-xl bg-white/5 border border-white/10 p-6 grid place-items-center text-white/80 text-sm min-h-[120px]">
+                    <div className="rounded-xl bg-white/5 border border-white/10 p-6 grid place-items-center text-white/80 text-sm min-h-[280px]">
                       {slot.sponsor ? (
                         <div className="text-center space-y-2">
                           {slot.sponsor.imageUrl && (
                             <img 
                               src={`http://localhost:5000${slot.sponsor.imageUrl}`} 
                               alt={slot.sponsor.sponsorName}
-                              className="max-h-16 mx-auto object-contain"
+                              className="max-h-48 mx-auto object-contain"
                             />
                           )}
                           <p className="text-white/90 font-medium">{slot.sponsor.sponsorName}</p>
