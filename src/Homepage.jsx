@@ -246,7 +246,7 @@ function Homepage() {
                   </div>
                 </div>
 
-                <a href="#sponsor" className="w-full px-4 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white font-semibold transition-all duration-300 text-center">
+                <a href="mailto:tcpstudentssociety20@gmail.com" className="w-full px-4 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white font-semibold transition-all duration-300 text-center">
                   Get Started
                 </a>
               </div>
@@ -288,7 +288,7 @@ function Homepage() {
                   </div>
                 </div>
 
-                <a href="#sponsor" className="w-full px-4 py-3 rounded-lg bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-semibold transition-all duration-300 text-center">
+                <a href="mailto:tcpstudentssociety20@gmail.com" className="w-full px-4 py-3 rounded-lg bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-semibold transition-all duration-300 text-center">
                   Get Started
                 </a>
               </div>
@@ -330,7 +330,7 @@ function Homepage() {
                   </div>
                 </div>
 
-                <a href="#sponsor" className="w-full px-4 py-3 rounded-lg bg-gradient-to-r from-slate-500 to-slate-600 hover:from-slate-600 hover:to-slate-700 text-white font-semibold transition-all duration-300 text-center">
+                <a href="mailto:tcpstudentssociety20@gmail.com" className="w-full px-4 py-3 rounded-lg bg-gradient-to-r from-slate-500 to-slate-600 hover:from-slate-600 hover:to-slate-700 text-white font-semibold transition-all duration-300 text-center">
                   Get Started
                 </a>
               </div>
@@ -372,7 +372,7 @@ function Homepage() {
                   </div>
                 </div>
 
-                <a href="#sponsor" className="w-full px-4 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold transition-all duration-300 text-center">
+                <a href="mailto:tcpstudentssociety20@gmail.com" className="w-full px-4 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold transition-all duration-300 text-center">
                   Get Started
                 </a>
               </div>

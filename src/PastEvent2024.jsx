@@ -17,10 +17,7 @@ const slides = [
     title: 'Performance Moments',
     caption: 'An evening dedicated to making education accessible.',
   },
-  {
-    image: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.13 (1).jpeg',
-    title: 'Community Together',
-  },
+
   {
     image: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.13.jpeg',
     title: 'Sankalana Spirit',
