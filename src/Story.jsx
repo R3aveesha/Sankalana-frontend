@@ -7,7 +7,7 @@ function Story() {
             The Story Behind the Music
           </h2>
           <p className="text-white/80 leading-relaxed">
-            For over 15 years, the Department of Town &amp; Country Planning at the University of Moratuwa has organized Sankalana — a
+            For over 15 years, the Department of Town &amp; Country Planning at the University of Moratuwa has organized Sankalana a
             musical charity show that brings together talented artists, supportive sponsors, and a community that believes in the power of
             education.
           </p>
@@ -27,7 +27,7 @@ function Story() {
           <p className="text-2xl md:text-3xl font-serif text-white/90 leading-snug">
             “Education is the most powerful weapon which you can use to change the world.”
           </p>
-          <p className="text-sm text-white/70 mt-3">— Nelson Mandela</p>
+          <p className="text-sm text-white/70 mt-3">Nelson Mandela</p>
         </div>
       </div>
     </section>

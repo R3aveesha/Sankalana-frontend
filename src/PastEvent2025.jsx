@@ -328,12 +328,7 @@ function PastEvent2025() {
                 >
                   Back to 2026 homepage
                 </a>
-                <a
-                  href="#"
-                  className="inline-flex items-center gap-2 rounded-md border border-white/20 bg-white/5 hover:bg-white/10 text-white px-5 py-2.5 font-semibold transition"
-                >
-                  Download 2025 recap (pdf)
-                </a>
+               
               </div>
             </div>
             <div className="rounded-xl bg-black/30 border border-white/10 p-6 space-y-3 text-white/80">
