@@ -34,7 +34,7 @@ export default function MenuBar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6">
             <a href="/#mission" className="text-white/90 hover:text-white">Our Mission</a>
-            <a href="/#placements" className="text-white/90 hover:text-white">Ad Placements</a>
+            <a href="/#objectives" className="text-white/90 hover:text-white">Objectives</a>
             <a href="/#packages" className="text-white/90 hover:text-white">Packages</a>
             <div className="relative" ref={eventsRef}>
               <button
@@ -52,14 +52,14 @@ export default function MenuBar() {
                     className="block px-4 py-2 text-white/90 hover:text-white hover:bg-white/10"
                     onClick={() => setIsEventsOpen(false)}
                   >
-                    Sankalana 2025
+                    Sankalana 2024/25
                   </Link>
                   <Link
                     to="/sankalana-2024"
                     className="block px-4 py-2 text-white/90 hover:text-white hover:bg-white/10"
                     onClick={() => setIsEventsOpen(false)}
                   >
-                    Sankalana 2024
+                    Sankalana 2023/24
                   </Link>
                 </div>
               )}
@@ -85,13 +85,13 @@ export default function MenuBar() {
           <div className="md:hidden pb-3 border-t border-white/10">
             <div className="grid gap-2 pt-2">
               <a href="/#mission" className="text-white/90 hover:text-white" onClick={() => setIsOpen(false)}>Our Mission</a>
-              <a href="/#placements" className="text-white/90 hover:text-white" onClick={() => setIsOpen(false)}>Ad Placements</a>
+              <a href="/#objectives" className="text-white/90 hover:text-white" onClick={() => setIsOpen(false)}>Objectives</a>
               <a href="/#packages" className="text-white/90 hover:text-white" onClick={() => setIsOpen(false)}>Packages</a>
               <div className="rounded-lg border border-white/10 bg-white/5">
                 <p className="px-3 pt-2 text-white/70 text-xs uppercase">Events</p>
                 <div className="flex flex-col pb-2">
-                  <Link to="/sankalana-2025" className="px-3 py-1 text-white/90 hover:text-white">Sankalana 2025</Link>
-                  <Link to="/sankalana-2024" className="px-3 py-1 text-white/90 hover:text-white">Sankalana 2024</Link>
+                  <Link to="/sankalana-2025" className="px-3 py-1 text-white/90 hover:text-white">Sankalana 2024/25</Link>
+                  <Link to="/sankalana-2024" className="px-3 py-1 text-white/90 hover:text-white">Sankalana 2023/24</Link>
                 </div>
               </div>
            

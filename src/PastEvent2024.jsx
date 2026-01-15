@@ -60,9 +60,9 @@ function PastEvent2024() {
         </div>
         <div className="mt-6 space-y-3">
           <p className="text-amber-200/90 uppercase tracking-[0.2em] text-xs">January 2024 • Faculty of Architecture, University of Moratuwa</p>
-          <h1 className="text-4xl md:text-5xl font-serif font-bold">Sankalana 2024 — Roots and Rhythms</h1>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold">Sankalana 2024 Roots and Rhythms</h1>
           <p className="text-white/80 max-w-3xl leading-relaxed">
-            An intimate evening that blended folk traditions with contemporary grooves, Sankalana 2024 focused on raising starter grants
+            An intimate evening that blended folk traditions with contemporary grooves, Sankalana 2023/24 focused on raising starter grants
             for students balancing studies and family commitments. The night reaffirmed why the community rallies for this cause each year.
           </p>
         </div>

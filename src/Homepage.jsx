@@ -199,10 +199,46 @@ function Homepage() {
 
         {/* Story section */}
         <Story />
-        <section id="placements" className="max-w-7xl mx-auto px-4 py-16">
-          <h2 className="text-2xl font-semibold mb-4">Ad Placements</h2>
-          <p className="text-white/80">Choose from homepage slots, partner placements, and event-day promotions.</p>
+        
+        {/* Objectives section */}
+        <section id="objectives" className="max-w-7xl mx-auto px-4 py-16">
+          <div className="mb-12">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 text-amber-100">Objectives</h2>
+          </div>
+          
+          <div className="grid gap-4 max-w-4xl">
+            <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <span className="text-amber-400 font-bold text-lg mt-1">•</span>
+              <p className="text-white/90 text-base leading-relaxed">Establish a student development and welfare fund for the department.</p>
+            </div>
+            
+            <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <span className="text-amber-400 font-bold text-lg mt-1">•</span>
+              <p className="text-white/90 text-base leading-relaxed">Provide a platform for undergraduates to showcase musical, vocal, and dance talent</p>
+            </div>
+            
+            <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <span className="text-amber-400 font-bold text-lg mt-1">•</span>
+              <p className="text-white/90 text-base leading-relaxed">Encourage relaxation, cultural enjoyment, and social bonding beyond academics</p>
+            </div>
+            
+            <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <span className="text-amber-400 font-bold text-lg mt-1">•</span>
+              <p className="text-white/90 text-base leading-relaxed">Strengthen teamwork through a student-led orchestra and performance groups</p>
+            </div>
+            
+            <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <span className="text-amber-400 font-bold text-lg mt-1">•</span>
+              <p className="text-white/90 text-base leading-relaxed">Foster appreciation for performing arts within the university community</p>
+            </div>
+            
+            <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <span className="text-amber-400 font-bold text-lg mt-1">•</span>
+              <p className="text-white/90 text-base leading-relaxed">Deliver a high-quality cultural event that stands out in the annual calendar</p>
+            </div>
+          </div>
         </section>
+        
         <section id="packages" className="max-w-7xl mx-auto px-4 py-16">
           <div className="mb-12">
             <p className="text-amber-200 text-sm font-semibold tracking-widest uppercase mb-2">Sponsorship Tiers</p>
@@ -228,22 +264,42 @@ function Homepage() {
                   <p className="text-4xl font-bold text-cyan-300">Rs. 175,000</p>
                 </div>
 
-                <div className="space-y-3 mb-8 flex-grow">
-                  <div className="flex items-start gap-3">
+                <div className="space-y-2.5 mb-8 flex-grow">
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
                     <span className="text-cyan-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Homepage hero placement with brand story</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Company logos on photo booth</span>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
                     <span className="text-cyan-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Event day main stage recognition</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Partnership announcement on TCP Facebook page</span>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
                     <span className="text-cyan-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Exclusive social media features</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Can display announcement on company's social media</span>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
                     <span className="text-cyan-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Custom branded booth space</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Promotional materials distributed to participants</span>
+                  </div>
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
+                    <span className="text-cyan-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Company representatives as event guests</span>
+                  </div>
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
+                    <span className="text-cyan-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Conduct awareness session to promote products</span>
+                  </div>
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
+                    <span className="text-cyan-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Video & Flyer on TCP Facebook page</span>
+                  </div>
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-400/30 transition-all duration-200">
+                    <span className="text-cyan-400 font-bold mt-0.5">✓</span>
+                    <span className="text-cyan-100 text-sm font-medium leading-relaxed"><strong className="text-cyan-300">10</strong> banners inside University</span>
+                  </div>
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-400/30 transition-all duration-200">
+                    <span className="text-cyan-400 font-bold mt-0.5">✓</span>
+                    <span className="text-cyan-100 text-sm font-medium leading-relaxed"><strong className="text-cyan-300">2</strong> × 30-sec videos on LED screen</span>
                   </div>
                 </div>
 
@@ -270,22 +326,38 @@ function Homepage() {
                   <p className="text-4xl font-bold text-yellow-300">Rs. 125,000</p>
                 </div>
 
-                <div className="space-y-3 mb-8 flex-grow">
-                  <div className="flex items-start gap-3">
+                <div className="space-y-2.5 mb-8 flex-grow">
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
                     <span className="text-yellow-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Prime homepage sub-slot placement</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Company logos on photo booth</span>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
                     <span className="text-yellow-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Event program featured listing</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Partnership announcement on TCP Facebook page</span>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
                     <span className="text-yellow-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Social media brand mentions</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Can display announcement on company's social media</span>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
                     <span className="text-yellow-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Pre & post-event marketing</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Promotional materials distributed to participants</span>
+                  </div>
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
+                    <span className="text-yellow-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Company representatives as event guests</span>
+                  </div>
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
+                    <span className="text-yellow-400 font-bold mt-0.5">✓</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Video & Flyer on TCP Facebook page</span>
+                  </div>
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-yellow-500/10 hover:bg-yellow-500/20 border border-yellow-400/30 transition-all duration-200">
+                    <span className="text-yellow-400 font-bold mt-0.5">✓</span>
+                    <span className="text-yellow-100 text-sm font-medium leading-relaxed"><strong className="text-yellow-300">5</strong> banners inside University</span>
+                  </div>
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-yellow-500/10 hover:bg-yellow-500/20 border border-yellow-400/30 transition-all duration-200">
+                    <span className="text-yellow-400 font-bold mt-0.5">✓</span>
+                    <span className="text-yellow-100 text-sm font-medium leading-relaxed"><strong className="text-yellow-300">1</strong> × 30-sec video on LED screen</span>
                   </div>
                 </div>
 
@@ -312,22 +384,26 @@ function Homepage() {
                   <p className="text-4xl font-bold text-slate-300">Rs. 75,000</p>
                 </div>
 
-                <div className="space-y-3 mb-8 flex-grow">
-                  <div className="flex items-start gap-3">
+                <div className="space-y-2.5 mb-8 flex-grow">
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
                     <span className="text-slate-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Homepage secondary placement</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Company logos on photo booth</span>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
                     <span className="text-slate-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Event day recognition</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Partnership announcement on TCP Facebook page</span>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
                     <span className="text-slate-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Partner logo on marketing materials</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Can display announcement on company's social media</span>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
                     <span className="text-slate-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Event attendance passes (2)</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Flyer on TCP Facebook page</span>
+                  </div>
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-slate-500/10 hover:bg-slate-500/20 border border-slate-400/30 transition-all duration-200">
+                    <span className="text-slate-400 font-bold mt-0.5">✓</span>
+                    <span className="text-slate-100 text-sm font-medium leading-relaxed"><strong className="text-slate-300">3</strong> banners inside University</span>
                   </div>
                 </div>
 
@@ -354,22 +430,18 @@ function Homepage() {
                   <p className="text-4xl font-bold text-orange-300">Rs. 50,000</p>
                 </div>
 
-                <div className="space-y-3 mb-8 flex-grow">
-                  <div className="flex items-start gap-3">
+                <div className="space-y-2.5 mb-8 flex-grow">
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
                     <span className="text-orange-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Partner recognition on website</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Company logos on photo booth</span>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
                     <span className="text-orange-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Event day announcements</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Partnership announcement on TCP Facebook page</span>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
                     <span className="text-orange-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Social media shout-outs</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-orange-400 font-bold mt-0.5">✓</span>
-                    <span className="text-white/80 text-sm">Event attendance passes (1)</span>
+                    <span className="text-white/90 text-sm leading-relaxed">Flyer on TCP Facebook page</span>
                   </div>
                 </div>
 
@@ -389,7 +461,7 @@ function Homepage() {
       {/* Contact Modal */}
       {showContactModal && (
         <div className="fixed inset-0 bg-black/70 backdrop-blur flex items-center justify-center z-50 p-4">
-          <div className="bg-neutral-900 rounded-2xl border border-amber-200/50 shadow-2xl max-w-md w-full p-8 relative">
+          <div className="bg-neutral-900 rounded-2xl border border-amber-200/50 shadow-2xl max-w-4xl w-full p-8 relative">
             <button
               onClick={() => setShowContactModal(false)}
               className="absolute top-4 right-4 text-white/70 hover:text-white transition"
@@ -398,25 +470,113 @@ function Homepage() {
                 <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clipRule="evenodd" />
               </svg>
             </button>
-            <div className="text-center space-y-6">
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-2">Contact Us to Become a Sponsor</h3>
-                <p className="text-white/70">Reach out to us for sponsorship opportunities</p>
+            <div className="space-y-8">
+              <div className="text-center">
+                <h3 className="text-3xl font-bold text-white mb-2">Contact Us to Become a Sponsor</h3>
+                <p className="text-white/70">Reach out to our team for sponsorship opportunities</p>
               </div>
-              <div className="space-y-4">
-                <div className="bg-white/5 border border-amber-200/30 rounded-lg p-4">
-                  <p className="text-white/80 text-sm mb-2">📧 Email</p>
-                  <a 
-                    href="mailto:tcpstudentssociety20@gmail.com"
-                    className="text-amber-400 font-semibold hover:text-amber-300 break-all"
-                  >
-                    tcpstudentssociety20@gmail.com
-                  </a>
+              
+              <div className="grid md:grid-cols-3 gap-6">
+                {/* P.K. Suvini Nisansala */}
+                <div className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 border border-amber-200/30 rounded-xl p-6 text-center space-y-4 hover:border-amber-200/50 transition-all duration-300">
+                  <div className="h-16 w-16 rounded-full bg-amber-500/20 border-2 border-amber-400/50 flex items-center justify-center mx-auto">
+                    <span className="text-2xl">👤</span>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-white mb-1">P.K. Suvini Nisansala</h4>
+                    <p className="text-amber-200/80 text-sm font-medium mb-3">President - Town & Country Planning Students' Society</p>
+                    <div className="space-y-2">
+                      <a 
+                        href="mailto:nisansalapks.22@uom.lk"
+                        className="flex items-center justify-center gap-2 text-amber-400 hover:text-amber-300 text-sm transition"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                          <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                          <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                        </svg>
+                        nisansalapks.22@uom.lk
+                      </a>
+                      <a 
+                        href="tel:+94766863345"
+                        className="flex items-center justify-center gap-2 text-white/80 hover:text-white text-sm transition"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                          <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
+                        </svg>
+                        +94 76 686 3345
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* M.J. Rasim */}
+                <div className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 border border-amber-200/30 rounded-xl p-6 text-center space-y-4 hover:border-amber-200/50 transition-all duration-300">
+                  <div className="h-16 w-16 rounded-full bg-amber-500/20 border-2 border-amber-400/50 flex items-center justify-center mx-auto">
+                    <span className="text-2xl">👤</span>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-white mb-1">M.J. Rasim</h4>
+                    <p className="text-amber-200/80 text-sm font-medium mb-3">Junior Treasurer - Town & Country Planning Students' Society</p>
+                    <div className="space-y-2">
+                      <a 
+                        href="mailto:rasimmj.22@uom.lk"
+                        className="flex items-center justify-center gap-2 text-amber-400 hover:text-amber-300 text-sm transition"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                          <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                          <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                        </svg>
+                        rasimmj.22@uom.lk
+                      </a>
+                      <a 
+                        href="tel:+94762424537"
+                        className="flex items-center justify-center gap-2 text-white/80 hover:text-white text-sm transition"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                          <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
+                        </svg>
+                        +94 76 242 4537
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Venura Withanage */}
+                <div className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 border border-amber-200/30 rounded-xl p-6 text-center space-y-4 hover:border-amber-200/50 transition-all duration-300">
+                  <div className="h-16 w-16 rounded-full bg-amber-500/20 border-2 border-amber-400/50 flex items-center justify-center mx-auto">
+                    <span className="text-2xl">👤</span>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-white mb-1">Venura Withanage</h4>
+                    <p className="text-amber-200/80 text-sm font-medium mb-3">Treasurer - Event Organizing Committee</p>
+                    <div className="space-y-2">
+                      <a 
+                        href="mailto:withanageVHI.23@uom.lk"
+                        className="flex items-center justify-center gap-2 text-amber-400 hover:text-amber-300 text-sm transition"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                          <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                          <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                        </svg>
+                        withanageVHI.23@uom.lk
+                      </a>
+                      <a 
+                        href="tel:+94757674756"
+                        className="flex items-center justify-center gap-2 text-white/80 hover:text-white text-sm transition"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                          <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
+                        </svg>
+                        +94 75 767 4756
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
+
               <button
                 onClick={() => setShowContactModal(false)}
-                className="w-full bg-amber-500 hover:bg-amber-600 text-neutral-950 font-semibold py-2 rounded-lg transition"
+                className="w-full bg-amber-500 hover:bg-amber-600 text-neutral-950 font-semibold py-3 rounded-lg transition"
               >
                 Close
               </button>
