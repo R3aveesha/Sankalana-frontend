@@ -460,11 +460,11 @@ function Homepage() {
 
       {/* Contact Modal */}
       {showContactModal && (
-        <div className="fixed inset-0 bg-black/70 backdrop-blur flex items-center justify-center z-50 p-4">
-          <div className="bg-neutral-900 rounded-2xl border border-amber-200/50 shadow-2xl max-w-4xl w-full p-8 relative">
+        <div className="fixed inset-0 bg-black/70 backdrop-blur flex flex-col items-center justify-start sm:justify-center z-50 p-4 overflow-y-auto">
+          <div className="bg-neutral-900 rounded-2xl border border-amber-200/50 shadow-2xl max-w-4xl w-full p-6 sm:p-8 relative my-4 sm:my-8 max-h-[90vh] overflow-y-auto">
             <button
               onClick={() => setShowContactModal(false)}
-              className="absolute top-4 right-4 text-white/70 hover:text-white transition"
+              className="sticky top-2 right-2 float-right p-2 text-white/70 hover:text-white hover:bg-white/10 rounded-lg transition z-20"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                 <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clipRule="evenodd" />
