@@ -5,6 +5,7 @@ import Story from './Story';
 function Homepage() {
   const [sponsorships, setSponsorships] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [showContactModal, setShowContactModal] = useState(false);
 
   useEffect(() => {
     const fetchSponsorships = async () => {
@@ -60,15 +61,15 @@ function Homepage() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a
-                    href="#sponsor"
+                  <button
+                    onClick={() => setShowContactModal(true)}
                     className="inline-flex items-center gap-2 rounded-md bg-amber-500 hover:bg-amber-600 text-neutral-950 px-6 py-3 font-semibold shadow-lg shadow-amber-500/20 transition"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                       <path d="M11.645 20.91l-.007-.004-.022-.012a15.247 15.247 0 01-.364-.21 25.18 25.18 0 01-4.243-3.054C4.448 15.268 2.25 12.882 2.25 9.75 2.25 7.1 4.3 5.25 6.75 5.25c1.473 0 2.716.633 3.69 1.675a5.252 5.252 0 013.81-1.675c2.45 0 4.5 1.85 4.5 4.5 0 3.132-2.198 5.518-4.759 7.88a25.18 25.18 0 01-4.243 3.054 15.08 15.08 0 01-.364.21l-.022.012-.007.004-.003.002a.75.75 0 01-.704 0l-.003-.002z" />
                     </svg>
                     Become a Sponsor
-                  </a>
+                  </button>
                   <a
                     href="#packages"
                     className="inline-flex items-center gap-2 rounded-md bg-white/10 hover:bg-white/20 border border-white/20 px-6 py-3 font-semibold transition"
@@ -83,7 +84,7 @@ function Homepage() {
                     <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/10">🗓️</span>
                     <span>Coming Soon 2026</span>
                   </div>
-                  <a href="https://www.google.com/maps/place/University+of+Moratuwa/data=!4m2!3m1!1s0x0:0x7bd32721ab02560e?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-3 py-1.5 hover:bg-white/20 transition">
+                  <a href="https://www.google.com/maps/place/Department+of+Town+and+Country+Planning/@6.7950515,79.9013921,19.68z/data=!4m14!1m7!3m6!1s0x3ae245416b7f34b5:0x7bd32721ab02560e!2sUniversity+of+Moratuwa!8m2!3d6.7951276!4d79.900867!16zL20vMDVjN3Rn!3m5!1s0x3ae245410e808c17:0x602982eb298c2f15!8m2!3d6.7950337!4d79.9015614!16s%2Fg%2F1tv3m351?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-3 py-1.5 hover:bg-white/20 transition">
                     <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/10">📍</span>
                     <span>University of Moratuwa, Sri Lanka</span>
                   </a>
@@ -384,6 +385,45 @@ function Homepage() {
           <p className="text-white/80">Sankalana 2026 will be announced soon. Stay tuned!</p>
         </section>
       </main>
+
+      {/* Contact Modal */}
+      {showContactModal && (
+        <div className="fixed inset-0 bg-black/70 backdrop-blur flex items-center justify-center z-50 p-4">
+          <div className="bg-neutral-900 rounded-2xl border border-amber-200/50 shadow-2xl max-w-md w-full p-8 relative">
+            <button
+              onClick={() => setShowContactModal(false)}
+              className="absolute top-4 right-4 text-white/70 hover:text-white transition"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clipRule="evenodd" />
+              </svg>
+            </button>
+            <div className="text-center space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-2">Contact Us to Become a Sponsor</h3>
+                <p className="text-white/70">Reach out to us for sponsorship opportunities</p>
+              </div>
+              <div className="space-y-4">
+                <div className="bg-white/5 border border-amber-200/30 rounded-lg p-4">
+                  <p className="text-white/80 text-sm mb-2">📧 Email</p>
+                  <a 
+                    href="mailto:tcpstudentssociety20@gmail.com"
+                    className="text-amber-400 font-semibold hover:text-amber-300 break-all"
+                  >
+                    tcpstudentssociety20@gmail.com
+                  </a>
+                </div>
+              </div>
+              <button
+                onClick={() => setShowContactModal(false)}
+                className="w-full bg-amber-500 hover:bg-amber-600 text-neutral-950 font-semibold py-2 rounded-lg transition"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
