@@ -99,7 +99,7 @@ function Homepage() {
                   {[
                     { title: 'Premium Reach', copy: 'Homepage hero with your logo & brand story.' },
                     { title: 'Audience', copy: 'Engage students, alumni, partners & patrons.' },
-                    { title: 'Impact', copy: 'Every rupee helps a student dream bigger.' },
+                    { title: 'Impact', copy: 'Every rupee helps a student dream bigger and  allocated for අකුර project.' },
                   ].map((item) => (
                     <div key={item.title} className="rounded-2xl bg-white/10 border border-white/10 backdrop-blur px-4 py-3 shadow-lg shadow-black/20">
                       <p className="text-amber-100 font-semibold">{item.title}</p>
@@ -193,8 +193,8 @@ function Homepage() {
 
         {/* Placeholder sections for anchors */}
         <section id="mission" className="max-w-7xl mx-auto px-4 py-16">
-          <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
-          <p className="text-white/80">We aim to support students through the power of music and community sponsorships.</p>
+          <h2 className="text-2xl font-semibold mb-4">Our Vision</h2>
+          <p className="text-white/80 text-lg leading-relaxed max-w-4xl">"Our vision for the Sankalana Concert is to transcend traditional boundaries by incorporating a fusion of outstanding musical performances, captivating singing, and mesmerizing dancing elements. By seamlessly blending these artistic expressions, we strive to create a concert experience that is truly unique and unforgettable, igniting the 50-year legacy of excellence of our department."</p>
         </section>
 
         {/* Story section */}

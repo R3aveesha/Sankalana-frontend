@@ -4,12 +4,11 @@ function Story() {
       <div className="grid lg:grid-cols-2 gap-6">
         <div className="rounded-2xl bg-white/5 border border-white/10 backdrop-blur p-8 shadow-xl shadow-black/30">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">
-            The Story Behind the Music
+            The Story Behind the Sankalana
           </h2>
           <p className="text-white/80 leading-relaxed">
-            For over 15 years, the Department of Town &amp; Country Planning at the University of Moratuwa has organized Sankalana a
-            musical charity show that brings together talented artists, supportive sponsors, and a community that believes in the power of
-            education.
+           The Sankalana Programme aims to allocate the post event balance of the Student Society Account towards providing scholarships for students affected by recent disasters, while also continuing the scholarship initiative introduced in the previous 
+            year to support selected students facing financial 
           </p>
           <p className="text-white/80 leading-relaxed mt-4">
             Our scholarship program has helped dozens of students complete their degrees, transforming not just their lives but the

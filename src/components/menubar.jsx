@@ -33,7 +33,7 @@ export default function MenuBar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6">
-            <a href="/#mission" className="text-white/90 hover:text-white">Our Mission</a>
+            <a href="/#mission" className="text-white/90 hover:text-white">Our Vision</a>
             <a href="/#objectives" className="text-white/90 hover:text-white">Objectives</a>
             <a href="/#packages" className="text-white/90 hover:text-white">Packages</a>
             <div className="relative" ref={eventsRef}>
