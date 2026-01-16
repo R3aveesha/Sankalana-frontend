@@ -303,6 +303,36 @@ function PastEvent2025() {
             </div>
           </div>
         </section>
+
+        <section className="rounded-2xl border border-amber-200/50 bg-amber-50/5 p-8 backdrop-blur shadow-xl shadow-amber-500/10">
+          <div className="mb-8">
+            <p className="text-amber-100 font-semibold">Donations & Support</p>
+            <h3 className="text-3xl font-serif font-bold mt-2">Financial Contributors</h3>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { description: 'Automobile Association of Ceylon (Gold)', amount: '100,000' },
+              { description: 'Jaykay Marketing Services PVT Ltd (Gold)', amount: '100,000' },
+              { description: 'Evergreen Education & Visa Consultants (Gold)', amount: '100,000' },
+              { description: 'Home Lands Skyline Pvt Ltd (Gold)', amount: '100,000' },
+              { description: 'TCP Alumni (Silver)', amount: '70,000' },
+              { description: 'Bhoomi Reality Holdings (Bronze)', amount: '50,000' },
+              { description: 'The Grand Mountain Hotel (Bronze)', amount: '50,000' },
+              { description: 'Donation (Mr. Lakpathum)', amount: '20,000' },
+              { description: 'Donation (TCP 18-22 batch)', amount: '13,000' },
+            ].map((item, idx) => (
+              <div key={idx} className="rounded-xl bg-white/5 border border-amber-200/30 p-5 hover:bg-white/10 hover:border-amber-200/50 transition-all duration-300">
+                <p className="text-white/90 font-medium text-sm md:text-base mb-2">{item.description}</p>
+                <p className="text-amber-300 font-bold text-lg">Rs. {item.amount}</p>
+              </div>
+            ))}
+          </div>
+          
+          <p className="text-white/70 text-sm mt-8 leading-relaxed">
+            We are deeply grateful to all our donors and sponsors who contributed to Sankalana 2025. Your generosity directly supported scholarships for 12 students and helped create an unforgettable evening of music and community.
+          </p>
+        </section>
       </main>
     </div>
   );
