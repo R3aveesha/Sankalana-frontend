@@ -484,7 +484,24 @@ function Homepage() {
         </section>
         <section id="event" className="max-w-7xl mx-auto px-4 py-16">
           <h2 className="text-2xl font-semibold mb-4">Event</h2>
-          <p className="text-white/80">Sankalana 2026 will be announced soon. Stay tuned!</p>
+          <p className="text-white/80 mb-8">Sankalana 2026 will be announced soon. Stay tuned!</p>
+          
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="/sankalana-2025"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-neutral-950 px-6 py-3 font-semibold shadow-lg shadow-amber-500/20 transition-all duration-300"
+            >
+              <span>📅</span>
+              View Sankalana 2025
+            </a>
+            <a
+              href="/sankalana-2024"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white px-6 py-3 font-semibold shadow-lg shadow-slate-500/20 transition-all duration-300"
+            >
+              <span>📅</span>
+              View Sankalana 2024
+            </a>
+          </div>
         </section>
       </main>
 
