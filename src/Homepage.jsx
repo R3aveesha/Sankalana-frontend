@@ -95,13 +95,13 @@ function Homepage() {
                 </div>
 
                 {/* Story highlight */}
-                <div className="mx-auto max-w-3xl grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm text-white/85">
+                <div className="mx-auto max-w-3xl grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm text-white/85 items-start">
                   {[
                     { title: 'Premium Reach', copy: 'Homepage hero with your logo & brand story.' },
-                    { title: 'Audience', copy: 'Engage students, alumni, partners & patrons.' },
-                    { title: 'Impact', copy: 'Every rupee helps a student dream bigger and  allocated for අකුර project.' },
+                    { title: 'Audience', copy: 'Over 1000 attendees, including undergraduates from all faculties, university lecturers, professors, alumni members, academic staff and industrial professionals & workers.' },
+                    { title: 'Impact', copy: 'Every rupee helps a student dream bigger and allocated for අකුර project.' },
                   ].map((item) => (
-                    <div key={item.title} className="rounded-2xl bg-white/10 border border-white/10 backdrop-blur px-4 py-3 shadow-lg shadow-black/20">
+                    <div key={item.title} className="rounded-2xl bg-white/10 border border-white/10 backdrop-blur px-4 py-3 shadow-lg shadow-black/20 h-fit">
                       <p className="text-amber-100 font-semibold">{item.title}</p>
                       <p className="text-white/75 mt-1 leading-relaxed">{item.copy}</p>
                     </div>
