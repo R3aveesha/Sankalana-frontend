@@ -189,6 +189,37 @@ function Homepage() {
               )}
             </div>
           </div>
+
+          {/* Donation Slots */}
+          <div className="bg-neutral-950/95 border-t border-white/5">
+            <div className="max-w-7xl mx-auto px-4 py-8">
+              <div className="mb-6">
+                <h3 className="text-lg md:text-xl font-semibold text-amber-100 tracking-wide uppercase">Donation Slots</h3>
+                <p className="text-white/70 text-sm mt-1">Support the event with flexible contribution opportunities</p>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
+                {[
+                  { label: 'DONATION 1' },
+                  { label: 'DONATION 2' },
+                  { label: 'DONATION 3' },
+                  { label: 'DONATION 4' },
+                  { label: 'DONATION 5' },
+                ].map((slot, idx) => (
+                  <div
+                    key={idx}
+                    className="rounded-xl bg-white/5 border border-dashed border-rose-300/50 p-4 shadow-lg shadow-black/20 backdrop-blur hover:bg-white/8 transition-all duration-300"
+                  >
+                    <div className="text-center space-y-2">
+                      <p className="text-xs md:text-sm font-semibold text-rose-300/90">{slot.label}</p>
+                      <div className="pt-2 border-t border-rose-300/20">
+                        <p className="text-xs text-white/60">Available</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Placeholder sections for anchors */}

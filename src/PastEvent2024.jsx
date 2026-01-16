@@ -237,8 +237,8 @@ function PastEvent2024() {
               </div>
               <div className="flex justify-center gap-6">
                 {[{ src: '/images/events/sponsers2024/gold1.jpeg', alt: 'Gold Partner' }].map((sponsor, idx) => (
-                  <div key={idx} className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-500/15 via-yellow-500/5 to-transparent border border-yellow-400/40 p-6 flex items-center justify-center min-h-72 hover:border-yellow-300/80 transition-all duration-500 shadow-lg shadow-yellow-500/10 hover:shadow-yellow-500/20">
-                    <img src={sponsor.src} alt={sponsor.alt} className="w-full h-full object-contain max-h-72 transition-all duration-500 group-hover:scale-105" loading="lazy" />
+                  <div key={idx} className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-500/15 via-yellow-500/5 to-transparent border border-yellow-400/40 p-8 flex items-center justify-center min-h-96 hover:border-yellow-300/80 transition-all duration-500 shadow-lg shadow-yellow-500/10 hover:shadow-yellow-500/20">
+                    <img src={sponsor.src} alt={sponsor.alt} className="w-full h-full object-contain max-h-96 transition-all duration-500 group-hover:scale-105" loading="lazy" />
                   </div>
                 ))}
               </div>
