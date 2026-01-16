@@ -64,10 +64,10 @@ function PastEvent2025() {
               acoustic soul, classical fusion, and contemporary dance, reminding us why music remains our favorite way to give back.
             </p>
             <div className="flex flex-wrap gap-3 text-sm text-white/85">
-              <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">1,100+ attendees</span>
-              <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">LKR 2.1M pledged</span>
-              <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">8 partner brands</span>
-              <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">Scholarships for 12 students</span>
+              <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">Event Highlights</span>
+              <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">Community Support</span>
+              <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">Partnership Success</span>
+              <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">Student Impact</span>
             </div>
           </div>
         </header>
@@ -157,23 +157,6 @@ function PastEvent2025() {
               <li>• Community booths connected sponsors directly with students and families.</li>
               <li>• Every ticket and sponsorship fed directly into the scholarship trust.</li>
             </ul>
-          </div>
-
-          <div className="rounded-2xl bg-white/5 border border-white/10 p-8 backdrop-blur shadow-xl shadow-black/30">
-            <h3 className="text-2xl font-serif font-bold">Impact snapshot</h3>
-            <div className="grid grid-cols-2 gap-4 mt-4 text-sm md:text-base">
-              {[ 
-                { label: 'Scholarships funded', value: '12' },
-                { label: 'Funds raised', value: 'LKR 2.1M' },
-                { label: 'Corporate partners', value: '8' },
-                { label: 'Volunteer hours', value: '900+' },
-              ].map((item) => (
-                <div key={item.label} className="rounded-xl bg-black/30 border border-white/10 p-4">
-                  <p className="text-amber-100 text-sm font-semibold">{item.label}</p>
-                  <p className="text-2xl font-bold text-white mt-1">{item.value}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 

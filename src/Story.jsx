@@ -17,12 +17,6 @@ function Story() {
         </div>
 
         <div className="rounded-2xl bg-white/5 border border-white/10 backdrop-blur p-8 shadow-xl shadow-black/30 flex flex-col items-center justify-center text-center">
-          <div className="w-12 h-12 mb-4 rounded-full bg-amber-500/15 border border-amber-200/40 grid place-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="w-7 h-7 text-amber-200">
-              <path d="M3 10l9-5 9 5-9 5-9-5z" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M7 12v5c0 1.1 2.686 2 6 2s6-.9 6-2v-5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </div>
           <p className="text-2xl md:text-3xl font-serif text-white/90 leading-snug">
             “Education is the most powerful weapon which you can use to change the world.”
           </p>

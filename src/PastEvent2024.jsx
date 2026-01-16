@@ -153,23 +153,6 @@ function PastEvent2024() {
         </section>
 
         <section className="rounded-2xl bg-white/5 border border-white/10 p-8 backdrop-blur shadow-xl shadow-black/30">
-          <h3 className="text-2xl font-serif font-bold">Impact snapshot</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 text-sm md:text-base">
-            {[ 
-              { label: 'Scholarships supported', value: '9' },
-              { label: 'Funds raised', value: 'LKR 1.6M' },
-              { label: 'Partners', value: '6' },
-              { label: 'Volunteer hours', value: '700+' },
-            ].map((item) => (
-              <div key={item.label} className="rounded-xl bg-black/30 border border-white/10 p-4">
-                <p className="text-amber-100 text-sm font-semibold">{item.label}</p>
-                <p className="text-2xl font-bold text-white mt-1">{item.value}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="rounded-2xl bg-white/5 border border-white/10 p-8 backdrop-blur shadow-xl shadow-black/30">
           <h3 className="text-2xl font-serif font-bold">Event Gallery</h3>
           <p className="text-white/70 mt-2 mb-6">Highlights from Sankalana 2024</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

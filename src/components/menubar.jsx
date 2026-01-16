@@ -26,7 +26,7 @@ export default function MenuBar() {
         <div className="flex justify-between items-center h-14">
           {/* Brand */}
           <div className="flex-shrink-0">
-            <Link to="/" className="text-white text-xl md:text-2xl font-semibold tracking-wide">
+            <Link to="/" className="text-white text-xl md:text-2xl font-serif tracking-wide">
               Sankalana
             </Link>
           </div>
