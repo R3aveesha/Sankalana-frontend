@@ -240,30 +240,11 @@ function PastEvent2025() {
                 {[
                   { src: '/images/events/sponsers 2025/gold.jpeg', alt: 'Gold Partner 1' },
                   { src: '/images/events/sponsers 2025/gold2.jpeg', alt: 'Gold Partner 2' },
+                  { src: '/images/events/sponsers 2025/gold3.jpeg', alt: 'Gold Partner 3' },
+                  { src: '/images/events/sponsers 2025/gold4.jpeg', alt: 'Gold Partner 4' },
                 ].map((sponsor, idx) => (
                   <div key={idx} className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-500/15 via-yellow-500/5 to-transparent border border-yellow-400/40 p-8 flex items-center justify-center min-h-64 hover:border-yellow-300/80 transition-all duration-500 shadow-lg shadow-yellow-500/10 hover:shadow-yellow-500/20">
                     <img src={sponsor.src} alt={sponsor.alt} className="w-full h-full object-contain max-h-64 transition-all duration-500 group-hover:scale-110" loading="lazy" />
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Silver Tier */}
-            <div className="mb-14">
-              <div className="flex items-center justify-center gap-3 mb-8">
-                <div className="h-px w-12 bg-gradient-to-r from-transparent to-slate-400" />
-                <div className="h-2 w-2 rounded-full bg-slate-400 shadow-lg shadow-slate-400/50" />
-                <h4 className="text-2xl font-semibold text-slate-300 font-serif">Silver Partners</h4>
-                <div className="h-2 w-2 rounded-full bg-slate-400 shadow-lg shadow-slate-400/50" />
-                <div className="h-px w-12 bg-gradient-to-l from-transparent to-slate-400" />
-              </div>
-              <div className="flex flex-wrap justify-center gap-5">
-                {[
-                  { src: '/images/events/sponsers 2025/gold3.jpeg', alt: 'Silver Partner 1' },
-                  { src: '/images/events/sponsers 2025/gold4.jpeg', alt: 'Silver Partner 2' },
-                ].map((sponsor, idx) => (
-                  <div key={idx} className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-500/15 via-slate-500/5 to-transparent border border-slate-400/40 p-5 flex items-center justify-center w-80 h-80 hover:border-slate-300/80 transition-all duration-500 shadow-md shadow-slate-500/10 hover:shadow-slate-500/20">
-                    <img src={sponsor.src} alt={sponsor.alt} className="w-full h-full object-contain transition-all duration-500 group-hover:scale-105" loading="lazy" />
                   </div>
                 ))}
               </div>
