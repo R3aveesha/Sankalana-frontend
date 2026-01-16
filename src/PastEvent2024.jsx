@@ -161,8 +161,6 @@ function PastEvent2024() {
               { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.04 (1).jpeg', alt: 'Sankalana 2024 event moment' },
               { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.04.jpeg', alt: 'Sankalana 2024 event moment' },
               { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.05.jpeg', alt: 'Sankalana 2024 event moment' },
-              { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.12.jpeg', alt: 'Sankalana 2024 event moment' },
-              { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.13 (1).jpeg', alt: 'Sankalana 2024 event moment' },
               { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.13 (2).jpeg', alt: 'Sankalana 2024 event moment' },
               { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.13.jpeg', alt: 'Sankalana 2024 event moment' },
               { src: '/images/events/images2024/WhatsApp Image 2026-01-13 at 13.01.14.jpeg', alt: 'Sankalana 2024 event moment' },
