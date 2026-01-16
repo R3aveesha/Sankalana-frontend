@@ -192,27 +192,26 @@ function Homepage() {
 
           {/* Donation Slots */}
           <div className="bg-neutral-950/95 border-t border-white/5">
-            <div className="max-w-7xl mx-auto px-4 py-8">
-              <div className="mb-6">
+            <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col items-center">
+              <div className="mb-6 text-center">
                 <h3 className="text-lg md:text-xl font-semibold text-amber-100 tracking-wide uppercase">Donation Slots</h3>
                 <p className="text-white/70 text-sm mt-1">Support the event with flexible contribution opportunities</p>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
+              <div className="space-y-4 w-full max-w-2xl">
                 {[
-                  { label: 'DONATION 1' },
-                  { label: 'DONATION 2' },
-                  { label: 'DONATION 3' },
-                  { label: 'DONATION 4' },
-                  { label: 'DONATION 5' },
+                  { label: 'Bronze Donor', range: 'Rs. 10,000 - 15,000', color: 'border-orange-300/50 bg-orange-500/5 hover:bg-orange-500/10' },
+                  { label: 'Silver Donor', range: 'Rs. 15,000 - 20,000', color: 'border-slate-300/50 bg-slate-500/5 hover:bg-slate-500/10' },
+                  { label: 'Gold Donor', range: 'Rs. 20,000 - 30,000', color: 'border-yellow-300/50 bg-yellow-500/5 hover:bg-yellow-500/10' },
                 ].map((slot, idx) => (
                   <div
                     key={idx}
-                    className="rounded-xl bg-white/5 border border-dashed border-rose-300/50 p-4 shadow-lg shadow-black/20 backdrop-blur hover:bg-white/8 transition-all duration-300"
+                    className={`rounded-xl border border-dashed ${slot.color} p-6 shadow-lg shadow-black/20 backdrop-blur transition-all duration-300 max-w-2xl`}
                   >
-                    <div className="text-center space-y-2">
-                      <p className="text-xs md:text-sm font-semibold text-rose-300/90">{slot.label}</p>
-                      <div className="pt-2 border-t border-rose-300/20">
-                        <p className="text-xs text-white/60">Available</p>
+                    <div className="text-center space-y-3">
+                      <p className="text-sm md:text-base font-bold text-white">{slot.label}</p>
+                      <p className="text-xs md:text-sm font-semibold text-white/90">{slot.range}</p>
+                      <div className="pt-3 border-t border-white/20">
+                        <p className="text-xs text-white/60">Ordinary Level Donor</p>
                       </div>
                     </div>
                   </div>
@@ -589,7 +588,7 @@ function Homepage() {
                           <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
                           <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                         </svg>
-                        withanagevhi.23@uom.lk
+                        withanagevhj.23@uom.lk
                       </a>
                       <a 
                         href="tel:+94757674756"

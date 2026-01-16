@@ -26,8 +26,13 @@ export default function MenuBar() {
         <div className="flex justify-between items-center h-14">
           {/* Brand */}
           <div className="flex-shrink-0">
-            <Link to="/" className="text-white text-xl md:text-2xl font-serif tracking-wide">
-              Sankalana
+            <Link to="/" className="flex items-center gap-3">
+              <img 
+                src="/images/events/Adobe Express - file.png" 
+                alt="Sankalana Logo" 
+                className="h-12 w-auto object-contain"
+              />
+              <span className="text-white text-xl md:text-2xl font-serif tracking-wide">Sankalana</span>
             </Link>
           </div>
 
