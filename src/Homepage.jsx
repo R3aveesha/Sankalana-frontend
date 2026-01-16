@@ -492,14 +492,14 @@ function Homepage() {
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-neutral-950 px-6 py-3 font-semibold shadow-lg shadow-amber-500/20 transition-all duration-300"
             >
               <span>📅</span>
-              View Sankalana 2025
+              View Sankalana 2024/25
             </a>
             <a
               href="/sankalana-2024"
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white px-6 py-3 font-semibold shadow-lg shadow-slate-500/20 transition-all duration-300"
             >
               <span>📅</span>
-              View Sankalana 2024
+              View Sankalana 2023/24
             </a>
           </div>
         </section>
