@@ -197,7 +197,7 @@ function Homepage() {
                 <h3 className="text-lg md:text-xl font-semibold text-amber-100 tracking-wide uppercase">Donation Slots</h3>
                 <p className="text-white/70 text-sm mt-1">Support the event with flexible contribution opportunities</p>
               </div>
-              <div className="space-y-4 w-full max-w-2xl">
+              <div className="space-y-3 w-full max-w-xl">
                 {[
                   { label: 'Sri Nadeeka Jewellery', range: 'Rs. 25,000', color: 'border-yellow-300/50 bg-yellow-500/5 hover:bg-yellow-500/10', image: '/images/events/donor2.PNG' },
                   { label: 'Gold Donor', range: 'Rs. 20,000 - 30,000', color: 'border-yellow-300/50 bg-yellow-500/5 hover:bg-yellow-500/10' },
@@ -206,21 +206,21 @@ function Homepage() {
                 ].map((slot, idx) => (
                   <div
                     key={idx}
-                    className={`rounded-xl border border-dashed ${slot.color} p-6 shadow-lg shadow-black/20 backdrop-blur transition-all duration-300 max-w-2xl`}
+                    className={`rounded-lg border border-dashed ${slot.color} p-4 shadow-lg shadow-black/20 backdrop-blur transition-all duration-300 max-w-xl`}
                   >
-                    <div className="text-center space-y-3">
+                    <div className="text-center space-y-2">
                       {slot.image && (
-                        <div className="flex justify-center mb-3 bg-white rounded-lg p-3">
+                        <div className="flex justify-center mb-2 bg-white rounded-lg p-2">
                           <img 
                             src={slot.image} 
                             alt={slot.label}
-                            className="max-h-48 object-contain"
+                            className="max-h-16 object-contain"
                           />
                         </div>
                       )}
-                      <p className="text-sm md:text-base font-bold text-white">{slot.label}</p>
-                      <p className="text-xs md:text-sm font-semibold text-white/90">{slot.range}</p>
-                      <div className="pt-3 border-t border-white/20">
+                      <p className="text-xs md:text-sm font-bold text-white">{slot.label}</p>
+                      <p className="text-xs font-semibold text-white/90">{slot.range}</p>
+                      <div className="pt-2 border-t border-white/20">
                         <p className="text-xs text-white/60">Ordinary Level Donor</p>
                       </div>
                     </div>
@@ -517,39 +517,39 @@ function Homepage() {
             </div>
             </div>
             <div className="mt-10">
-              <div className="mb-6 text-center">
+              <div className="mb-4 text-center">
                 <h3 className="text-lg md:text-xl font-semibold text-amber-100 tracking-wide uppercase">Bronze Donor Slots</h3>
-                <p className="text-white/70 text-sm mt-1">Flexible contribution opportunities</p>
+                <p className="text-white/70 text-xs mt-1">Flexible contribution opportunities</p>
               </div>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 {/* Anuradha Perera */}
                 <div
-                  className="rounded-xl border border-dashed border-orange-300/50 bg-orange-500/5 hover:bg-orange-500/10 p-6 shadow-lg shadow-black/20 backdrop-blur transition-all duration-300"
+                  className="rounded-lg border border-dashed border-orange-300/50 bg-orange-500/5 hover:bg-orange-500/10 p-4 shadow-lg shadow-black/20 backdrop-blur transition-all duration-300"
                 >
-                  <div className="text-center space-y-3">
-                    <div className="flex justify-center mb-3 bg-white rounded-lg p-3">
+                  <div className="text-center space-y-2">
+                    <div className="flex justify-center mb-2 bg-white rounded-lg p-2">
                       <img 
                         src="/images/events/donor1.PNG" 
                         alt="Anuradha Perera"
-                        className="max-h-48 object-contain"
+                        className="max-h-16 object-contain"
                       />
                     </div>
-                    <p className="text-sm md:text-base font-bold text-white">Anuradha Perera</p>
-                    <p className="text-xs md:text-sm font-semibold text-white/90">Rs. 15,000</p>
-                    <div className="pt-3 border-t border-white/20">
+                    <p className="text-xs md:text-sm font-bold text-white">Anuradha Perera</p>
+                    <p className="text-xs font-semibold text-white/90">Rs. 15,000</p>
+                    <div className="pt-2 border-t border-white/20">
                       <p className="text-xs text-white/60">Bronze Donor</p>
                     </div>
                   </div>
                 </div>
-                {Array.from({ length: 2 }).map((_, idx) => (
+                {Array.from({ length: 3 }).map((_, idx) => (
                   <div
                     key={idx}
-                    className="rounded-xl border border-dashed border-orange-300/50 bg-orange-500/5 hover:bg-orange-500/10 p-6 shadow-lg shadow-black/20 backdrop-blur transition-all duration-300"
+                    className="rounded-lg border border-dashed border-orange-300/50 bg-orange-500/5 hover:bg-orange-500/10 p-4 shadow-lg shadow-black/20 backdrop-blur transition-all duration-300"
                   >
-                    <div className="text-center space-y-3">
-                      <p className="text-sm md:text-base font-bold text-white">Bronze Donor</p>
-                      <p className="text-xs md:text-sm font-semibold text-white/90">Rs. 10,000 - 15,000</p>
-                      <div className="pt-3 border-t border-white/20">
+                    <div className="text-center space-y-2">
+                      <p className="text-xs md:text-sm font-bold text-white">Bronze Donor</p>
+                      <p className="text-xs font-semibold text-white/90">Rs. 10,000 - 15,000</p>
+                      <div className="pt-2 border-t border-white/20">
                         <p className="text-xs text-white/60">Ordinary Level Donor</p>
                       </div>
                     </div>
