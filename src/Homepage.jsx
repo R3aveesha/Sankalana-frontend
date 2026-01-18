@@ -199,7 +199,8 @@ function Homepage() {
               </div>
               <div className="space-y-4 w-full max-w-2xl">
                 {[
-                  
+                  { label: 'Gold Donor', range: 'Rs. 20,000 - 30,000', color: 'border-yellow-300/50 bg-yellow-500/5 hover:bg-yellow-500/10' },
+                  { label: 'Gold Donor', range: 'Rs. 20,000 - 30,000', color: 'border-yellow-300/50 bg-yellow-500/5 hover:bg-yellow-500/10' },
                   { label: 'Gold Donor', range: 'Rs. 20,000 - 30,000', color: 'border-yellow-300/50 bg-yellow-500/5 hover:bg-yellow-500/10' },
                 ].map((slot, idx) => (
                   <div
