@@ -199,8 +199,7 @@ function Homepage() {
               </div>
               <div className="space-y-4 w-full max-w-2xl">
                 {[
-                  { label: 'Bronze Donor', range: 'Rs. 10,000 - 15,000', color: 'border-orange-300/50 bg-orange-500/5 hover:bg-orange-500/10' },
-                  { label: 'Silver Donor', range: 'Rs. 15,000 - 20,000', color: 'border-slate-300/50 bg-slate-500/5 hover:bg-slate-500/10' },
+                  
                   { label: 'Gold Donor', range: 'Rs. 20,000 - 30,000', color: 'border-yellow-300/50 bg-yellow-500/5 hover:bg-yellow-500/10' },
                 ].map((slot, idx) => (
                   <div
@@ -229,6 +228,31 @@ function Homepage() {
 
         {/* Story section */}
         <Story />
+        {/* Silver Donor */}
+        <div className="bg-neutral-950/95 border-t border-white/5">
+          <div className="max-w-7xl mx-auto px-4 py-8">
+            <div className="mb-6 text-center">
+              <h3 className="text-lg md:text-xl font-semibold text-amber-100 tracking-wide uppercase">Silver Donor Slots</h3>
+              <p className="text-white/70 text-sm mt-1">Flexible contribution opportunities</p>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {Array.from({ length: 3 }).map((_, idx) => (
+                <div
+                  key={idx}
+                  className="rounded-xl border border-dashed border-slate-300/50 bg-slate-500/5 hover:bg-slate-500/10 p-6 shadow-lg shadow-black/20 backdrop-blur transition-all duration-300"
+                >
+                  <div className="text-center space-y-3">
+                    <p className="text-sm md:text-base font-bold text-white">Silver Donor</p>
+                    <p className="text-xs md:text-sm font-semibold text-white/90">Rs. 15,000 - 20,000</p>
+                    <div className="pt-3 border-t border-white/20">
+                      <p className="text-xs text-white/60">Ordinary Level Donor</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
         
         {/* Objectives section */}
         <section id="objectives" className="max-w-7xl mx-auto px-4 py-16">
@@ -480,9 +504,31 @@ function Homepage() {
                 </a>
               </div>
             </div>
-          </div>
-        </section>
-        <section id="event" className="max-w-7xl mx-auto px-4 py-16">
+            </div>
+            <div className="mt-10">
+              <div className="mb-6 text-center">
+                <h3 className="text-lg md:text-xl font-semibold text-amber-100 tracking-wide uppercase">Bronze Donor Slots</h3>
+                <p className="text-white/70 text-sm mt-1">Flexible contribution opportunities</p>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {Array.from({ length: 3 }).map((_, idx) => (
+                  <div
+                    key={idx}
+                    className="rounded-xl border border-dashed border-orange-300/50 bg-orange-500/5 hover:bg-orange-500/10 p-6 shadow-lg shadow-black/20 backdrop-blur transition-all duration-300"
+                  >
+                    <div className="text-center space-y-3">
+                      <p className="text-sm md:text-base font-bold text-white">Bronze Donor</p>
+                      <p className="text-xs md:text-sm font-semibold text-white/90">Rs. 10,000 - 15,000</p>
+                      <div className="pt-3 border-t border-white/20">
+                        <p className="text-xs text-white/60">Ordinary Level Donor</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+          <section id="event" className="max-w-7xl mx-auto px-4 py-16">
           <h2 className="text-2xl font-semibold mb-4">Event</h2>
           <p className="text-white/80 mb-8">Sankalana 2026 will be announced soon. Stay tuned!</p>
           
