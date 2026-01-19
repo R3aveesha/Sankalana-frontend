@@ -61,7 +61,9 @@ function Homepage() {
                 </div>
 
                 <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto leading-relaxed bg-black/30 backdrop-blur rounded-2xl px-4 py-3 md:px- md:py-4 border border-white/10">
-                  A charity musical show organized by the Department of Town &amp; Country Planning, Faculty of Architecture, University of Moratuwa — where every note played helps a student dream bigger.
+                The signature musical and performing arts concert organized by the Department of Town & Country Planning, University of Moratuwa, 
+                celebrating student creativity, unity, and expression beyond the classroom. <br />
+                <b>Where every note played helps a student dream bigger.</b>
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -194,21 +196,21 @@ function Homepage() {
 
           {/* Bronze Partner */}
           <div className="bg-neutral-950/95 border-t border-white/5">
-            <div className="max-w-7xl mx-auto px-4 py-16">
-              <div className="mb-8 text-center">
-                <h3 className="text-3xl font-serif font-bold mb-2">
+            <div className="max-w-7xl mx-auto px-4 py-6">
+              <div className="mb-4 text-center">
+                <h3 className="text-xl font-serif font-bold mb-1">
                   <span className="text-orange-400">•</span> Bronze Partners <span className="text-orange-400">•</span>
                 </h3>
               </div>
               <div className="flex justify-center">
-                <div className="w-full max-w-md">
-                  <div className="relative rounded-2xl overflow-hidden border-4 border-orange-500/60 shadow-2xl shadow-orange-500/30 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900">
+                <div className="w-full max-w-xs">
+                  <div className="relative rounded-lg overflow-hidden border-2 border-orange-500/60 shadow-lg shadow-orange-500/30 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900">
                     <div className="aspect-square bg-cover bg-center" style={{backgroundImage: "url('/images/events/bronze%20partner.jpeg')"}}>
                     </div>
                   </div>
-                  <div className="mt-6 text-center bg-gradient-to-r from-orange-500/10 via-orange-500/20 to-orange-500/10 border border-orange-500/30 rounded-xl py-4 px-6">
-                    <p className="text-sm text-orange-200/80 mb-1 uppercase tracking-wider">Sponsorship Package</p>
-                    <p className="text-3xl font-bold text-orange-400">Rs. 50,000</p>
+                  <div className="mt-3 text-center bg-gradient-to-r from-orange-500/10 via-orange-500/20 to-orange-500/10 border border-orange-500/30 rounded-lg py-2 px-4">
+                    <p className="text-xs text-orange-200/80 mb-1 uppercase tracking-wider">Sponsorship Package</p>
+                    <p className="text-xl font-bold text-orange-400">Rs. 50,000</p>
                   </div>
                 </div>
               </div>
