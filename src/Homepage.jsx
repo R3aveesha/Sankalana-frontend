@@ -63,7 +63,8 @@ function Homepage() {
                 <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto leading-relaxed bg-black/30 backdrop-blur rounded-2xl px-4 py-3 md:px- md:py-4 border border-white/10">
                 The signature musical and performing arts concert organized by the Department of Town & Country Planning, University of Moratuwa, 
                 celebrating student creativity, unity, and expression beyond the classroom. <br />
-                <b>Where every note played helps a student dream bigger.</b>
+                
+                <p className="text-amber-200 font-semibold"><b><h3>Where every note played helps a student dream bigger.</h3></b></p>
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
