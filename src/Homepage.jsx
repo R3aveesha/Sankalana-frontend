@@ -25,6 +25,10 @@ function Homepage() {
   const premiumSponsors = sponsorships.filter(s => s.sponsorType === 'premium');
   const goldSponsors = sponsorships.filter(s => s.sponsorType === 'gold');
   const silverSponsors = sponsorships.filter(s => s.sponsorType === 'silver');
+  const bronzePartners = [
+    { name: 'Bronze Partner', price: 'Rs. 50,000', image: '/images/events/bronze%20partner.jpeg' },
+   
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 text-white">
@@ -149,44 +153,65 @@ function Homepage() {
 
           {/* Sub slots */}
           <div className="bg-neutral-950/95 border-t border-white/5">
-            <div className="max-w-7xl mx-auto px-4 py-8 grid lg:grid-cols-3 gap-6">
+            <div className="max-w-7xl mx-auto px-4 py-8">
               {loading ? (
-                <div className="col-span-3 text-center text-white/70">Loading sponsors...</div>
+                <div className="text-center text-white/70">Loading sponsors...</div>
               ) : (
-                [
-                  { label: 'SUB SLOT A', badge: 'Limited', sponsor: goldSponsors[0] },
-                  { label: 'SUB SLOT B', badge: 'Featured', sponsor: goldSponsors[1] },
-                  { label: 'SUB SLOT C', badge: 'Popular', sponsor: goldSponsors[2] },
-                ].map((slot, idx) => (
-                  <div
-                    key={idx}
-                    className="rounded-2xl bg-white/5 border-2 border-dashed border-amber-200/70 p-5 shadow-xl shadow-black/20 backdrop-blur"
-                  >
-                    <div className="flex items-center justify-between text-xs md:text-sm text-white/85 mb-3">
-                      <span>{slot.label}</span>
-                      <span className="px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-100 border border-amber-200/50">
-                        {slot.badge}
-                      </span>
+                <div className="grid gap-6 md:grid-cols-2">
+                  {[{ label: 'SUB SLOT A', badge: 'Limited', sponsor: goldSponsors[0] }, { label: 'SUB SLOT B', badge: 'Featured', sponsor: goldSponsors[1] }].map((slot, idx) => (
+                    <div
+                      key={idx}
+                      className="rounded-2xl bg-white/5 border-2 border-dashed border-amber-200/70 p-5 shadow-xl shadow-black/20 backdrop-blur"
+                    >
+                      <div className="flex items-center justify-between text-xs md:text-sm text-white/85 mb-3">
+                        <span>{slot.label}</span>
+                        <span className="px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-100 border border-amber-200/50">
+                          {slot.badge}
+                        </span>
+                      </div>
+                      <div className="rounded-xl bg-white/5 border border-white/10 p-6 grid place-items-center text-white/80 text-sm min-h-[240px]">
+                        {slot.sponsor ? (
+                          <div className="text-center space-y-2">
+                            {slot.sponsor.imageUrl && (
+                              <img 
+                                src={`http://localhost:5000${slot.sponsor.imageUrl}`} 
+                                alt={slot.sponsor.sponsorName}
+                                className="max-h-40 mx-auto object-contain"
+                              />
+                            )}
+                            <p className="text-white/90 font-medium">{slot.sponsor.sponsorName}</p>
+                          </div>
+                        ) : (
+                          <p>Partner Logo</p>
+                        )}
+                      </div>
                     </div>
-                    <div className="rounded-xl bg-white/5 border border-white/10 p-6 grid place-items-center text-white/80 text-sm min-h-[280px]">
-                      {slot.sponsor ? (
-                        <div className="text-center space-y-2">
-                          {slot.sponsor.imageUrl && (
-                            <img 
-                              src={`http://localhost:5000${slot.sponsor.imageUrl}`} 
-                              alt={slot.sponsor.sponsorName}
-                              className="max-h-48 mx-auto object-contain"
-                            />
-                          )}
-                          <p className="text-white/90 font-medium">{slot.sponsor.sponsorName}</p>
-                        </div>
-                      ) : (
-                        <p>Partner Logo</p>
-                      )}
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Bronze Partner */}
+          <div className="bg-neutral-950/95 border-t border-white/5">
+            <div className="max-w-7xl mx-auto px-4 py-16">
+              <div className="mb-8 text-center">
+                <h3 className="text-3xl font-serif font-bold mb-2">
+                  <span className="text-orange-400">•</span> Bronze Partners <span className="text-orange-400">•</span>
+                </h3>
+              </div>
+              <div className="flex justify-center">
+                <div className="w-full max-w-md">
+                  <div className="relative rounded-2xl overflow-hidden border-4 border-orange-500/60 shadow-2xl shadow-orange-500/30 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900">
+                    <div className="aspect-square bg-cover bg-center" style={{backgroundImage: "url('/images/events/bronze%20partner.jpeg')"}}>
                     </div>
                   </div>
-                ))
-              )}
+                  <div className="mt-6 text-center bg-gradient-to-r from-orange-500/10 via-orange-500/20 to-orange-500/10 border border-orange-500/30 rounded-xl py-4 px-6">
+                    <p className="text-sm text-orange-200/80 mb-1 uppercase tracking-wider">Sponsorship Package</p>
+                    <p className="text-3xl font-bold text-orange-400">Rs. 50,000</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
