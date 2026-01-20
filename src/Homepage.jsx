@@ -61,7 +61,7 @@ function Homepage() {
                 </div>
 
                 <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto leading-relaxed bg-black/30 backdrop-blur rounded-2xl px-4 py-3 md:px- md:py-4 border border-white/10">
-                The signature musical and performing arts concert organized by the Department of Town & Country Planning, University of Moratuwa, 
+                The signature musical and performing arts concert organized by the <b>Department of Town & Country Planning, University of Moratuwa</b>, 
                 celebrating student creativity, unity, and expression beyond the classroom. <br />
                 
                 <p className="text-amber-200 font-semibold"><b><h3>Where every note played helps a student dream bigger.</h3></b></p>
@@ -106,7 +106,7 @@ function Homepage() {
                   {[
                     { title: 'Premium Reach', copy: 'Homepage hero with your logo & brand story.' },
                     { title: 'Audience', copy: 'Over 1000 attendees, including undergraduates from all faculties, university lecturers, professors, alumni members, academic staff and industrial professionals & workers.' },
-                    { title: 'Impact', copy: 'Every rupee helps a student dream bigger and allocated for අකුර project.' },
+                    { title: 'Impact', copy: 'Every rupee helps a student dream bigger and allocated for "Akuru Aran" project and sustaining scholarships for those in financial need With you, education continues even after crisis.' },
                   ].map((item) => (
                     <div key={item.title} className="rounded-2xl bg-white/10 border border-white/10 backdrop-blur px-4 py-3 shadow-lg shadow-black/20 h-fit">
                       <p className="text-amber-100 font-semibold">{item.title}</p>
@@ -154,6 +154,42 @@ function Homepage() {
             </div>
           </div>
 
+          {/* Department of Town & Country Planning Section */}
+          <div className="bg-neutral-950/95 border-t border-white/5">
+            <div className="max-w-7xl mx-auto px-4 py-12">
+              <div className="mb-8 text-center">
+                <h3 className="text-3xl md:text-4xl font-serif font-bold mb-2 text-amber-100">
+                  <span className="text-amber-500">•</span> Department of Town & Country Planning <span className="text-amber-500">•</span>
+                </h3>
+              </div>
+              <div className="max-w-4xl mx-auto space-y-6">
+                <div className="rounded-xl bg-white/5 border border-white/20 p-6 md:p-8 backdrop-blur">
+                  <p className="text-white/90 leading-relaxed text-base md:text-lg mb-6">
+                    The Department of Town & Country Planning at the University of Moratuwa stands as Sri Lanka's pioneering academic body in planning education. With a strong emphasis on sustainable development, spatial design, policy innovation, and urban resilience, the department molds future professionals equipped to address the evolving challenges of cities and regions. Through an integration of theory, studio practice, fieldwork, and research, the department continues to contribute to shaping livable, inclusive, and sustainable human settlements nationwide.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Town & Country Planning Students' Society Section */}
+          <div className="bg-neutral-950/95 border-t border-white/5">
+            <div className="max-w-7xl mx-auto px-4 py-12">
+              <div className="mb-8 text-center">
+                <h3 className="text-3xl md:text-4xl font-serif font-bold mb-2 text-amber-100">
+                  <span className="text-amber-500">•</span> Town & Country Planning Students' Society <span className="text-amber-500">•</span>
+                </h3>
+              </div>
+              <div className="max-w-4xl mx-auto space-y-6">
+                <div className="rounded-xl bg-white/5 border border-white/20 p-6 md:p-8 backdrop-blur">
+                  <p className="text-white/90 leading-relaxed text-base md:text-lg">
+                    The Town & Country Planning Students' Society represents undergraduates of the Department of Town & Country Planning at the University of Moratuwa. The society is dedicated to fostering leadership, creativity, student welfare, and community engagement through academic, cultural, and recreational initiatives.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Sub slots */}
           <div className="bg-neutral-950/95 border-t border-white/5">
             <div className="max-w-7xl mx-auto px-4 py-8">
@@ -192,6 +228,35 @@ function Homepage() {
                   ))}
                 </div>
               )}
+            </div>
+          </div>
+
+          {/* Akuru Aran Project Section */}
+          <div className="bg-neutral-950/95 border-t border-white/5">
+            <div className="max-w-7xl mx-auto px-4 py-12">
+              <div className="mb-8 text-center">
+                <h3 className="text-3xl md:text-4xl font-serif font-bold mb-2 text-amber-100">
+                  <span className="text-amber-500">•</span> Akuru Aran Project <span className="text-amber-500">•</span>
+                </h3>
+              </div>
+              <div className="max-w-4xl mx-auto space-y-6">
+                <div className="rounded-xl bg-white/5 border border-white/20 p-6 md:p-8 backdrop-blur">
+                  <p className="text-white/90 leading-relaxed text-base md:text-lg mb-4">
+                    The Akuru Aran Project was initiated as a response of care and responsibility when students' lives were disrupted by the recent cyclone. In its first phase, the project focused on immediate educational support for affected students in the Pathadumbara area of Kandy.
+                  </p>
+                  <p className="text-white/90 leading-relaxed text-base md:text-lg mb-4">
+                    With the collective efforts of alumni, students, and academic staff of the Department of Town & Country Planning, essential learning materials - including stationery, school bags, and books were provided to ensure that children could return to learning with dignity and hope.
+                  </p>
+                  <p className="text-white/90 leading-relaxed text-base md:text-lg mb-4">
+                    Building on this foundation, the next phase of the Akuru Aran Project moves from relief to resilience. The project now expands into a scholarship initiative, aimed at supporting students facing long-term financial challenges, ensuring continuity in education beyond crisis.
+                  </p>
+                  <div className="pt-4 border-t border-white/20">
+                    <p className="text-amber-100 leading-relaxed text-base md:text-lg font-semibold">
+                      Every rupee contributed through Sankalana '25 directly strengthens this journey, transforming generosity into opportunity, and compassion into lasting impact. Through your partnership, education is not paused by disaster, and futures are protected with care.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -296,38 +361,38 @@ function Homepage() {
         {/* Objectives section */}
         <section id="objectives" className="max-w-7xl mx-auto px-4 py-16">
           <div className="mb-12">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 text-amber-100">Objectives</h2>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 text-amber-100">Our Objectives</h2>
           </div>
           
           <div className="grid gap-4 max-w-4xl">
             <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
               <span className="text-amber-400 font-bold text-lg mt-1">•</span>
-              <p className="text-white/90 text-base leading-relaxed">Establish a student development and welfare fund for the department.</p>
+              <p className="text-white/90 text-base leading-relaxed">To provide a meaningful platform for students to express musical, vocal, and dance talent</p>
             </div>
             
             <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
               <span className="text-amber-400 font-bold text-lg mt-1">•</span>
-              <p className="text-white/90 text-base leading-relaxed">Provide a platform for undergraduates to showcase musical, vocal, and dance talent</p>
+              <p className="text-white/90 text-base leading-relaxed">To strengthen unity, teamwork, and cultural identity within the university</p>
             </div>
             
             <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
               <span className="text-amber-400 font-bold text-lg mt-1">•</span>
-              <p className="text-white/90 text-base leading-relaxed">Encourage relaxation, cultural enjoyment, and social bonding beyond academics</p>
+              <p className="text-white/90 text-base leading-relaxed">To promote emotional well-being and connection beyond academic life</p>
             </div>
             
             <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
               <span className="text-amber-400 font-bold text-lg mt-1">•</span>
-              <p className="text-white/90 text-base leading-relaxed">Strengthen teamwork through a student-led orchestra and performance groups</p>
+              <p className="text-white/90 text-base leading-relaxed">To nurture leadership through student-led orchestras and performance teams</p>
             </div>
             
             <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
               <span className="text-amber-400 font-bold text-lg mt-1">•</span>
-              <p className="text-white/90 text-base leading-relaxed">Foster appreciation for performing arts within the university community</p>
+              <p className="text-white/90 text-base leading-relaxed">To transform creativity into social impact by supporting students in need</p>
             </div>
             
             <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
               <span className="text-amber-400 font-bold text-lg mt-1">•</span>
-              <p className="text-white/90 text-base leading-relaxed">Deliver a high-quality cultural event that stands out in the annual calendar</p>
+              <p className="text-white/90 text-base leading-relaxed">To deliver a high-quality cultural experience that leaves a lasting impression</p>
             </div>
           </div>
         </section>

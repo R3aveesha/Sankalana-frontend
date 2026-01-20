@@ -60,7 +60,7 @@ function PastEvent2025() {
             <p className="text-amber-200/90 uppercase tracking-[0.2em] text-xs">January 2025 • Faculty of Architecture, University of Moratuwa</p>
             <h1 className="text-4xl md:text-5xl font-serif font-bold">Sankalana 2025 — A Night of Resonance</h1>
             <p className="text-white/80 max-w-3xl leading-relaxed">
-              Sankalana 2025 united students, alumni, and partners to raise scholarships for aspiring planners. The evening blended
+              Sankalana 2024 united students, alumni, and partners to raise scholarships for aspiring planners. The evening blended
               acoustic soul, classical fusion, and contemporary dance, reminding us why music remains our favorite way to give back.
             </p>
             <div className="flex flex-wrap gap-3 text-sm text-white/85">
@@ -80,7 +80,7 @@ function PastEvent2025() {
               <div>
                 <p className="text-amber-200 text-sm font-semibold">Highlights Reel</p>
                 <h2 className="text-3xl font-serif font-bold">Relive the stage energy</h2>
-                <p className="text-white/70 mt-2">Swipe or let it play — smooth slides keep the best 2025 moments in motion.</p>
+                <p className="text-white/70 mt-2">Swipe or let it play smooth slides keep the best 2025 moments in motion.</p>
               </div>
               <div className="flex gap-2 text-xs text-white/70">
                 <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white/5 border border-white/10">Auto-play</span>
@@ -155,27 +155,12 @@ function PastEvent2025() {
               <li>• Collaborative acts with alumni artists brought intergenerational music to the stage.</li>
               <li>• Stage design leaned on warm amber gradients to mirror our scholarship mission.</li>
               <li>• Community booths connected sponsors directly with students and families.</li>
-              <li>• Every ticket and sponsorship fed directly into the scholarship trust.</li>
+              <li>• Sponsorship fed directly into the scholarship trust.</li>
             </ul>
           </div>
         </section>
 
-        <section className="rounded-2xl bg-white/5 border border-white/10 p-8 backdrop-blur shadow-xl shadow-black/30">
-          <h3 className="text-2xl font-serif font-bold">Evening timeline</h3>
-          <div className="mt-6 grid md:grid-cols-3 gap-4 text-white/80">
-            {[ 
-              { time: '6:00 PM', title: 'Welcome & prelude', detail: 'Campus choir set the tone with acoustic harmonies.' },
-              { time: '7:00 PM', title: 'Feature acts', detail: 'Fusion ensemble with guest violinist turned the hall electric.' },
-              { time: '8:30 PM', title: 'Gratitude walk', detail: 'Scholarship recipients shared stories with sponsors.' },
-            ].map((slot) => (
-              <div key={slot.time} className="rounded-xl border border-white/10 bg-black/30 p-5">
-                <p className="text-amber-100 font-semibold">{slot.time}</p>
-                <p className="text-lg font-semibold text-white mt-1">{slot.title}</p>
-                <p className="text-white/70 mt-2 leading-relaxed">{slot.detail}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+       
 
         <section className="rounded-2xl bg-white/5 border border-white/10 p-8 backdrop-blur shadow-xl shadow-black/30">
           <h3 className="text-2xl font-serif font-bold">Event Gallery</h3>
@@ -280,9 +265,9 @@ function PastEvent2025() {
           <div className="grid md:grid-cols-[1.2fr_0.8fr] gap-6 items-center">
             <div>
               <p className="text-amber-100 font-semibold">Looking ahead</p>
-              <h3 className="text-3xl font-serif font-bold mt-2">Sankalana 2026 is coming</h3>
+              <h3 className="text-3xl font-serif font-bold mt-2">Sankalana 2025 is coming</h3>
               <p className="text-white/75 mt-3 leading-relaxed">
-                Inspired by 2025, we are crafting an even richer experience. If you loved the last show or wish to support more students,
+                Inspired by 2024, we are crafting an even richer experience. If you loved the last show or wish to support more students,
                 we would love to have you on board for the 2026 edition.
               </p>
               <div className="flex flex-wrap gap-3 mt-4">
@@ -312,13 +297,6 @@ function PastEvent2025() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { description: 'Automobile Association of Ceylon (Gold)', amount: '100,000' },
-              { description: 'Jaykay Marketing Services PVT Ltd (Gold)', amount: '100,000' },
-              { description: 'Evergreen Education & Visa Consultants (Gold)', amount: '100,000' },
-              { description: 'Home Lands Skyline Pvt Ltd (Gold)', amount: '100,000' },
-              { description: 'TCP Alumni (Silver)', amount: '70,000' },
-              { description: 'Bhoomi Reality Holdings (Bronze)', amount: '50,000' },
-              { description: 'The Grand Mountain Hotel (Bronze)', amount: '50,000' },
               { description: 'Donation (Mr. Lakpathum)', amount: '20,000' },
               { description: 'Donation (TCP 18-22 batch)', amount: '13,000' },
             ].map((item, idx) => (

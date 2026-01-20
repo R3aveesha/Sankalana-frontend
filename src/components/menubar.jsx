@@ -57,14 +57,13 @@ export default function MenuBar() {
                     className="block px-4 py-2 text-white/90 hover:text-white hover:bg-white/10"
                     onClick={() => setIsEventsOpen(false)}
                   >
-                    Sankalana 2024/25
-                  </Link>
+                    Sankalana 2024                  </Link>
                   <Link
                     to="/sankalana-2024"
                     className="block px-4 py-2 text-white/90 hover:text-white hover:bg-white/10"
                     onClick={() => setIsEventsOpen(false)}
                   >
-                    Sankalana 2023/24
+                    Sankalana 2023
                   </Link>
                 </div>
               )}
