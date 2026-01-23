@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import MenuBar from './components/menubar';
 import Story from './Story';
+import AkuruaranSlideshow from './components/AkuruaranSlideshow';
 
 function Homepage() {
   const [sponsorships, setSponsorships] = useState([]);
@@ -258,6 +259,11 @@ function Homepage() {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Akuru Aran Slideshow Section */}
+          <div className="bg-neutral-950/95 border-t border-white/5">
+            <AkuruaranSlideshow />
           </div>
 
           {/* Bronze Partner */}
