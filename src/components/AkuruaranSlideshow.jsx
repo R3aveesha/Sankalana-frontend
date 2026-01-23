@@ -57,11 +57,11 @@ function AkuruaranSlideshow() {
         {/* Slideshow Container */}
         <div className="relative rounded-lg overflow-hidden border border-white/10 shadow-lg shadow-amber-500/10 bg-black">
           {/* Main Image */}
-          <div className="relative h-56 md:h-72 overflow-hidden bg-black">
+          <div className="relative h-72 md:h-96 overflow-hidden bg-black">
             <img
               src={slides[currentSlide]}
               alt={`Akuru Aran location slide ${currentSlide + 1}`}
-              className="w-full h-full object-cover transition-opacity duration-700 ease-in-out"
+              className="w-full h-full object-contain transition-opacity duration-700 ease-in-out"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
 
