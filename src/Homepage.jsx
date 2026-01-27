@@ -148,7 +148,21 @@ function Homepage() {
                       )}
                     </div>
                   ) : (
-                    <p className="text-center text-white/90 text-sm md:text-base">Your Brand Logo &amp; Message Here</p>
+                    <div className="text-center">
+                      <div className="inline-block">
+                        <div className="relative rounded-lg overflow-hidden border-2 border-blue-500/60 shadow-lg shadow-blue-500/30 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900">
+                          <img 
+                            src="/images/events/premium partner.jpeg" 
+                            alt="Premium Partner Slot"
+                            className="max-h-96 object-contain"
+                          />
+                        </div>
+                        <div className="mt-3 bg-gradient-to-r from-blue-500/10 via-blue-500/20 to-blue-500/10 border border-blue-500/30 rounded-lg py-2 px-4">
+                          <p className="text-xs text-blue-200/80 mb-1 uppercase tracking-wider">Sponsorship Package</p>
+                          <p className="text-xl font-bold text-blue-400">Rs. 175,000</p>
+                        </div>
+                      </div>
+                    </div>
                   )}
                 </div>
               </div>
