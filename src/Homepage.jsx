@@ -122,12 +122,16 @@ function Homepage() {
           {/* Main slot */}
           <div className="bg-neutral-950/95 border-t border-white/5">
             <div className="max-w-7xl mx-auto px-4 py-8">
+              <div className="mb-6 text-center">
+                <h3 className="text-2xl md:text-3xl font-serif font-bold mb-1">
+                  <span className="text-cyan-400">•</span> Premium Partner <span className="text-cyan-400">•</span>
+                </h3>
+              </div>
               <div className="max-w-6xl mx-auto rounded-2xl bg-white/5 backdrop-blur border-2 border-dashed border-amber-200/80 shadow-2xl">
                 <div className="flex items-center justify-between gap-3 px-4 md:px-10 py-3 md:py-4">
                   <div className="flex flex-col md:flex-row md:items-center md:gap-3 text-sm md:text-base text-white/90">
-                    <span className="uppercase tracking-[0.2em] text-amber-100/90">Homepage Main Slot</span>
-                    <span className="hidden md:inline text-white/50">•</span>
-                    <span className="text-amber-100/90">Premium Partner</span>
+                   
+                    
                   </div>
                 </div>
                 <div className="pb-4 md:pb-5 grid place-items-center px-4 md:px-10">
