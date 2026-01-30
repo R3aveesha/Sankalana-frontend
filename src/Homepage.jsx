@@ -28,6 +28,7 @@ function Homepage() {
   const silverSponsors = sponsorships.filter(s => s.sponsorType === 'silver');
   const bronzePartners = [
     { name: 'Bronze Partner', price: 'Rs. 50,000', image: '/images/events/bronze%20partner.jpeg' },
+    { name: 'Bronze Partner 2', price: 'Rs. 50,000', image: '/images/events/bronze2partner.jpeg' },
    
   ];
 
@@ -161,10 +162,6 @@ function Homepage() {
                             className="max-h-96 object-contain"
                           />
                         </div>
-                        <div className="mt-3 bg-gradient-to-r from-blue-500/10 via-blue-500/20 to-blue-500/10 border border-blue-500/30 rounded-lg py-2 px-4">
-                          <p className="text-xs text-blue-200/80 mb-1 uppercase tracking-wider">Sponsorship Package</p>
-                          <p className="text-xl font-bold text-blue-400">Rs. 175,000</p>
-                        </div>
                       </div>
                     </div>
                   )}
@@ -292,17 +289,15 @@ function Homepage() {
                   <span className="text-orange-400">•</span> Bronze Partners <span className="text-orange-400">•</span>
                 </h3>
               </div>
-              <div className="flex justify-center">
-                <div className="w-full max-w-xs">
-                  <div className="relative rounded-lg overflow-hidden border-2 border-orange-500/60 shadow-lg shadow-orange-500/30 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900">
-                    <div className="aspect-square bg-cover bg-center" style={{backgroundImage: "url('/images/events/bronze%20partner.jpeg')"}}>
+              <div className="flex justify-center gap-6 flex-wrap">
+                {bronzePartners.map((partner, index) => (
+                  <div key={index} className="w-full max-w-xs">
+                    <div className="relative rounded-lg overflow-hidden border-2 border-orange-500/60 shadow-lg shadow-orange-500/30 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900">
+                      <div className="aspect-square bg-cover bg-center" style={{backgroundImage: `url('${partner.image}')`}}>
+                      </div>
                     </div>
                   </div>
-                  <div className="mt-3 text-center bg-gradient-to-r from-orange-500/10 via-orange-500/20 to-orange-500/10 border border-orange-500/30 rounded-lg py-2 px-4">
-                    <p className="text-xs text-orange-200/80 mb-1 uppercase tracking-wider">Sponsorship Package</p>
-                    <p className="text-xl font-bold text-orange-400">Rs. 50,000</p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -441,10 +436,7 @@ function Homepage() {
                   <p className="text-cyan-200/80 text-sm">Premium visibility & exclusive benefits</p>
                 </div>
 
-                <div className="mb-6 pb-6 border-b border-cyan-400/20">
-                  <p className="text-white/70 text-sm mb-2">Investment</p>
-                  <p className="text-4xl font-bold text-cyan-300">Rs. 175,000</p>
-                </div>
+
 
                 <div className="space-y-2.5 mb-8 flex-grow">
                   <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
@@ -503,10 +495,7 @@ function Homepage() {
                   <p className="text-yellow-200/80 text-sm">Strong brand presence & impact</p>
                 </div>
 
-                <div className="mb-6 pb-6 border-b border-yellow-400/20">
-                  <p className="text-white/70 text-sm mb-2">Investment</p>
-                  <p className="text-4xl font-bold text-yellow-300">Rs. 125,000</p>
-                </div>
+
 
                 <div className="space-y-2.5 mb-8 flex-grow">
                   <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
@@ -561,10 +550,7 @@ function Homepage() {
                   <p className="text-slate-200/80 text-sm">Meaningful brand visibility & support</p>
                 </div>
 
-                <div className="mb-6 pb-6 border-b border-slate-400/20">
-                  <p className="text-white/70 text-sm mb-2">Investment</p>
-                  <p className="text-4xl font-bold text-slate-300">Rs. 75,000</p>
-                </div>
+
 
                 <div className="space-y-2.5 mb-8 flex-grow">
                   <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
@@ -607,10 +593,7 @@ function Homepage() {
                   <p className="text-orange-200/80 text-sm">Community support & visibility</p>
                 </div>
 
-                <div className="mb-6 pb-6 border-b border-orange-400/20">
-                  <p className="text-white/70 text-sm mb-2">Investment</p>
-                  <p className="text-4xl font-bold text-orange-300">Rs. 50,000</p>
-                </div>
+
 
                 <div className="space-y-2.5 mb-8 flex-grow">
                   <div className="flex items-start gap-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-200">
