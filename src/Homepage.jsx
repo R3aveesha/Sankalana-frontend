@@ -29,6 +29,7 @@ function Homepage() {
   const bronzePartners = [
     { name: 'Bronze Partner', price: 'Rs. 50,000', image: '/images/events/bronze%20partner.jpeg' },
     { name: 'Bronze Partner 2', price: 'Rs. 50,000', image: '/images/events/bronze2partner.jpeg' },
+    { name: 'Bronze Partner 3', price: 'Rs. 50,000', image: '/images/events/bronze3.jpeg' },
    
   ];
 
